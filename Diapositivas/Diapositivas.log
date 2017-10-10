@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.7)  9 OCT 2017 20:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.7)  9 OCT 2017 20:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1405,12 +1405,12 @@ f, page is rotated 270 degrees> <./AAUgraphics/log_uni.png>]
 <AAUgraphics/neural-icon.png, id=79, 311.66437pt x 417.81094pt>
 File: AAUgraphics/neural-icon.png Graphic file (type png)
 <use AAUgraphics/neural-icon.png>
-Package pdftex.def Info: AAUgraphics/neural-icon.png  used on input line 117. o
-n input line 117.
+Package pdftex.def Info: AAUgraphics/neural-icon.png  used on input line 110. o
+n input line 110.
 Package pdftex.def Info: Requested size: 83.65198pt x 112.14105pt on input line
- 117.
+ 110.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 117.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 110.
 
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
@@ -1434,23 +1434,23 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [2
 
  <./AAUgraphics/log_uni.png> <./AAUgraphics/neural-icon.png>]
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 131.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 121.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
 <AAUgraphics/indoor.jpg, id=112, 1003.75pt x 501.875pt>
 File: AAUgraphics/indoor.jpg Graphic file (type jpg)
 <use AAUgraphics/indoor.jpg>
-Package pdftex.def Info: AAUgraphics/indoor.jpg  used on input line 131. on inp
-ut line 131.
+Package pdftex.def Info: AAUgraphics/indoor.jpg  used on input line 121. on inp
+ut line 121.
 Package pdftex.def Info: Requested size: 284.52481pt x 113.80533pt on input lin
-e 131.
+e 121.
 
-Overfull \hbox (5.68768pt too wide) in paragraph at lines 131--131
+Overfull \hbox (5.68768pt too wide) in paragraph at lines 121--121
 [] 
  []
 
@@ -1480,12 +1480,12 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 <AAUgraphics/ips.jpg, id=133, 521.95pt x 322.20375pt>
 File: AAUgraphics/ips.jpg Graphic file (type jpg)
 <use AAUgraphics/ips.jpg>
-Package pdftex.def Info: AAUgraphics/ips.jpg  used on input line 157. on input 
-line 157.
+Package pdftex.def Info: AAUgraphics/ips.jpg  used on input line 138. on input 
+line 138.
 Package pdftex.def Info: Requested size: 156.5862pt x 96.66187pt on input line 
-157.
+138.
 
-Overfull \vbox (7.45863pt too high) detected at line 157
+Overfull \vbox (7.45863pt too high) detected at line 138
  []
 
 
@@ -1514,10 +1514,10 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 <AAUgraphics/sensors.png, id=153, 455.18056pt x 287.3937pt>
 File: AAUgraphics/sensors.png Graphic file (type png)
 <use AAUgraphics/sensors.png>
-Package pdftex.def Info: AAUgraphics/sensors.png  used on input line 176. on in
-put line 176.
+Package pdftex.def Info: AAUgraphics/sensors.png  used on input line 149. on in
+put line 149.
 Package pdftex.def Info: Requested size: 273.11043pt x 172.43755pt on input lin
-e 176.
+e 149.
 
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
@@ -1542,7 +1542,7 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
  <./AAUgraphics/sensors.png>]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 196.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 171.
 
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
@@ -1567,39 +1567,11 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 207.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 182.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 207.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 182.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 207.
-Package epstopdf Info: Source file: <AAUgraphics/correlationCon.eps>
-(epstopdf)                    date: 2017-06-28 00:47:06
-(epstopdf)                    size: 207153 bytes
-(epstopdf)             Output file: <AAUgraphics/correlationCon-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2017-06-28 01:23:14
-(epstopdf)                    size: 19716 bytes
-(epstopdf)             Command: <repstopdf --outfile=AAUgraphics/correlationCon
--eps-converted-to.pdf AAUgraphics/correlationCon.eps>
-(epstopdf)             \includegraphics on input line 207.
-Package epstopdf Info: Output file is already uptodate.
-<AAUgraphics/correlationCon-eps-converted-to.pdf, id=193, pagebox=cropbox, 917.
-4275pt x 613.29124pt>
-File: AAUgraphics/correlationCon-eps-converted-to.pdf Graphic file (type pdf)
-<use AAUgraphics/correlationCon-eps-converted-to.pdf>
-Package pdftex.def Info: AAUgraphics/correlationCon-eps-converted-to.pdf  used 
-on input line 207. on input line 207.
-Package pdftex.def Info: Requested size: 275.23038pt x 183.98878pt on input lin
-e 207.
-
-Overfull \hbox (140.81181pt too wide) in paragraph at lines 207--207
-[][]  
- []
-
-
-Overfull \vbox (7.28062pt too high) detected at line 207
- []
-
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 182.
 
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
@@ -1622,32 +1594,7 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
 [7
 
- <./AAUgraphics/correlationCon-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <AAUgraphics/correlationRaspberry.eps>
-(epstopdf)                    date: 2017-06-28 00:41:15
-(epstopdf)                    size: 134370 bytes
-(epstopdf)             Output file: <AAUgraphics/correlationRaspberry-eps-conve
-rted-to.pdf>
-(epstopdf)                    date: 2017-06-28 01:23:15
-(epstopdf)                    size: 25813 bytes
-(epstopdf)             Command: <repstopdf --outfile=AAUgraphics/correlationRas
-pberry-eps-converted-to.pdf AAUgraphics/correlationRaspberry.eps>
-(epstopdf)             \includegraphics on input line 216.
-Package epstopdf Info: Output file is already uptodate.
-<AAUgraphics/correlationRaspberry-eps-converted-to.pdf, id=237, pagebox=cropbox
-, 849.1725pt x 613.29124pt>
-File: AAUgraphics/correlationRaspberry-eps-converted-to.pdf Graphic file (type 
-pdf)
-<use AAUgraphics/correlationRaspberry-eps-converted-to.pdf>
-Package pdftex.def Info: AAUgraphics/correlationRaspberry-eps-converted-to.pdf 
- used on input line 216. on input line 216.
-Package pdftex.def Info: Requested size: 254.75371pt x 183.98878pt on input lin
-e 216.
-
-Overfull \vbox (2.28062pt too high) detected at line 216
- []
-
-
+]
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
  []
@@ -1669,32 +1616,7 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
 [8
 
- <./AAUgraphics/correlationRaspberry-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <AAUgraphics/correlationMoviles.eps>
-(epstopdf)                    date: 2017-06-28 00:43:17
-(epstopdf)                    size: 137274 bytes
-(epstopdf)             Output file: <AAUgraphics/correlationMoviles-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2017-06-28 01:23:15
-(epstopdf)                    size: 25179 bytes
-(epstopdf)             Command: <repstopdf --outfile=AAUgraphics/correlationMov
-iles-eps-converted-to.pdf AAUgraphics/correlationMoviles.eps>
-(epstopdf)             \includegraphics on input line 225.
-Package epstopdf Info: Output file is already uptodate.
-<AAUgraphics/correlationMoviles-eps-converted-to.pdf, id=286, pagebox=cropbox, 
-849.1725pt x 613.29124pt>
-File: AAUgraphics/correlationMoviles-eps-converted-to.pdf Graphic file (type pd
-f)
-<use AAUgraphics/correlationMoviles-eps-converted-to.pdf>
-Package pdftex.def Info: AAUgraphics/correlationMoviles-eps-converted-to.pdf  u
-sed on input line 225. on input line 225.
-Package pdftex.def Info: Requested size: 254.75371pt x 183.98878pt on input lin
-e 225.
-
-Overfull \vbox (4.56058pt too high) detected at line 225
- []
-
-
+]
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
  []
@@ -1716,14 +1638,14 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
 [9
 
- <./AAUgraphics/correlationMoviles-eps-converted-to.pdf>]
-<AAUgraphics/map.png, id=335, 288.3272pt x 335.00156pt>
+]
+<AAUgraphics/map.png, id=250, 288.3272pt x 335.00156pt>
 File: AAUgraphics/map.png Graphic file (type png)
 <use AAUgraphics/map.png>
-Package pdftex.def Info: AAUgraphics/map.png  used on input line 241. on input 
-line 241.
+Package pdftex.def Info: AAUgraphics/map.png  used on input line 207. on input 
+line 207.
 Package pdftex.def Info: Requested size: 172.99763pt x 201.00247pt on input lin
-e 241.
+e 207.
 
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
@@ -1747,13 +1669,13 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [10
 
  <./AAUgraphics/map.png>]
-<AAUgraphics/espacio.png, id=356, 439.6425pt x 353.06906pt>
+<AAUgraphics/espacio.png, id=271, 439.6425pt x 353.06906pt>
 File: AAUgraphics/espacio.png Graphic file (type png)
 <use AAUgraphics/espacio.png>
-Package pdftex.def Info: AAUgraphics/espacio.png  used on input line 261. on in
-put line 261.
+Package pdftex.def Info: AAUgraphics/espacio.png  used on input line 225. on in
+put line 225.
 Package pdftex.def Info: Requested size: 83.65198pt x 67.1754pt on input line 2
-61.
+25.
 
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
@@ -1777,14 +1699,6 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [11
 
  <./AAUgraphics/espacio.png>]
-<AAUgraphics/mClass.png, id=378, 770.12718pt x 411.78844pt>
-File: AAUgraphics/mClass.png Graphic file (type png)
-<use AAUgraphics/mClass.png>
-Package pdftex.def Info: AAUgraphics/mClass.png  used on input line 273. on inp
-ut line 273.
-Package pdftex.def Info: Requested size: 278.83713pt x 149.09196pt on input lin
-e 273.
-
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
  []
@@ -1806,15 +1720,7 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
 [12
 
- <./AAUgraphics/mClass.png>]
-<AAUgraphics/mReg.png, id=398, 768.62157pt x 408.02437pt>
-File: AAUgraphics/mReg.png Graphic file (type png)
-<use AAUgraphics/mReg.png>
-Package pdftex.def Info: AAUgraphics/mReg.png  used on input line 282. on input
- line 282.
-Package pdftex.def Info: Requested size: 278.83713pt x 148.02177pt on input lin
-e 282.
-
+]
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
  []
@@ -1836,22 +1742,7 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
 [13
 
- <./AAUgraphics/mReg.png>]
-<AAUgraphics/microClasificacion.png, id=419, 442.65375pt x 317.68687pt>
-File: AAUgraphics/microClasificacion.png Graphic file (type png)
-<use AAUgraphics/microClasificacion.png>
-Package pdftex.def Info: AAUgraphics/microClasificacion.png  used on input line
- 297. on input line 297.
-Package pdftex.def Info: Requested size: 139.41856pt x 100.05734pt on input lin
-e 297.
-<AAUgraphics/microRegresion.png, id=420, 331.2375pt x 223.58531pt>
-File: AAUgraphics/microRegresion.png Graphic file (type png)
-<use AAUgraphics/microRegresion.png>
-Package pdftex.def Info: AAUgraphics/microRegresion.png  used on input line 297
-. on input line 297.
-Package pdftex.def Info: Requested size: 139.41856pt x 94.10646pt on input line
- 297.
-
+]
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
  []
@@ -1873,15 +1764,7 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
 [14
 
- <./AAUgraphics/microClasificacion.png> <./AAUgraphics/microRegresion.png>]
-<AAUgraphics/rasTx07Class.png, id=441, 770.88pt x 414.04688pt>
-File: AAUgraphics/rasTx07Class.png Graphic file (type png)
-<use AAUgraphics/rasTx07Class.png>
-Package pdftex.def Info: AAUgraphics/rasTx07Class.png  used on input line 307. 
-on input line 307.
-Package pdftex.def Info: Requested size: 278.83713pt x 149.76434pt on input lin
-e 307.
-
+]
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
  []
@@ -1903,22 +1786,7 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
 [15
 
- <./AAUgraphics/rasTx07Class.png>]
-<AAUgraphics/raspClasificacion.png, id=461, 810.02625pt x 415.5525pt>
-File: AAUgraphics/raspClasificacion.png Graphic file (type png)
-<use AAUgraphics/raspClasificacion.png>
-Package pdftex.def Info: AAUgraphics/raspClasificacion.png  used on input line 
-315. on input line 315.
-Package pdftex.def Info: Requested size: 139.41856pt x 71.51802pt on input line
- 315.
-<AAUgraphics/raspClasificacionErr.png, id=462, 781.41937pt x 418.56375pt>
-File: AAUgraphics/raspClasificacionErr.png Graphic file (type png)
-<use AAUgraphics/raspClasificacionErr.png>
-Package pdftex.def Info: AAUgraphics/raspClasificacionErr.png  used on input li
-ne 315. on input line 315.
-Package pdftex.def Info: Requested size: 139.41856pt x 74.674pt on input line 3
-15.
-
+]
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
  []
@@ -1940,16 +1808,7 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
 [16
 
- <./AAUgraphics/raspClasificacion.png> <./AAUgraphics/raspClasificacionErr.png>
 ]
-<AAUgraphics/rasTx07Reg.png, id=482, 761.09344pt x 407.27156pt>
-File: AAUgraphics/rasTx07Reg.png Graphic file (type png)
-<use AAUgraphics/rasTx07Reg.png>
-Package pdftex.def Info: AAUgraphics/rasTx07Reg.png  used on input line 324. on
- input line 324.
-Package pdftex.def Info: Requested size: 278.83713pt x 149.20906pt on input lin
-e 324.
-
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
  []
@@ -1971,22 +1830,7 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
 [17
 
- <./AAUgraphics/rasTx07Reg.png>]
-<AAUgraphics/raspRegresion.png, id=502, 816.04875pt x 382.42876pt>
-File: AAUgraphics/raspRegresion.png Graphic file (type png)
-<use AAUgraphics/raspRegresion.png>
-Package pdftex.def Info: AAUgraphics/raspRegresion.png  used on input line 332.
- on input line 332.
-Package pdftex.def Info: Requested size: 139.41856pt x 65.33296pt on input line
- 332.
-<AAUgraphics/raspRegresionErr.png, id=503, 766.36313pt x 386.94562pt>
-File: AAUgraphics/raspRegresionErr.png Graphic file (type png)
-<use AAUgraphics/raspRegresionErr.png>
-Package pdftex.def Info: AAUgraphics/raspRegresionErr.png  used on input line 3
-32. on input line 332.
-Package pdftex.def Info: Requested size: 139.41856pt x 70.39114pt on input line
- 332.
-
+]
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
  []
@@ -2008,15 +1852,7 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
 [18
 
- <./AAUgraphics/raspRegresion.png> <./AAUgraphics/raspRegresionErr.png>]
-<AAUgraphics/movTx07Class.png, id=523, 771.63281pt x 407.27156pt>
-File: AAUgraphics/movTx07Class.png Graphic file (type png)
-<use AAUgraphics/movTx07Class.png>
-Package pdftex.def Info: AAUgraphics/movTx07Class.png  used on input line 342. 
-on input line 342.
-Package pdftex.def Info: Requested size: 278.83713pt x 147.17073pt on input lin
-e 342.
-
+]
 Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 [][][] [][]
  []
@@ -2038,149 +1874,23 @@ Overfull \hbox (1.05998pt too wide) has occurred while \output is active
 
 [19
 
- <./AAUgraphics/movTx07Class.png>]
-<AAUgraphics/movClasificacion.png, id=543, 814.54312pt x 423.08063pt>
-File: AAUgraphics/movClasificacion.png Graphic file (type png)
-<use AAUgraphics/movClasificacion.png>
-Package pdftex.def Info: AAUgraphics/movClasificacion.png  used on input line 3
-50. on input line 350.
-Package pdftex.def Info: Requested size: 139.41856pt x 72.41338pt on input line
- 350.
-<AAUgraphics/movClasificacionErr.png, id=544, 773.89125pt x 421.575pt>
-File: AAUgraphics/movClasificacionErr.png Graphic file (type png)
-<use AAUgraphics/movClasificacionErr.png>
-Package pdftex.def Info: AAUgraphics/movClasificacionErr.png  used on input lin
-e 350. on input line 350.
-Package pdftex.def Info: Requested size: 139.41856pt x 75.94455pt on input line
- 350.
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-[20
-
- <./AAUgraphics/movClasificacion.png> <./AAUgraphics/movClasificacionErr.png>]
-<AAUgraphics/movTx07Reg.png, id=565, 765.6103pt x 406.51875pt>
-File: AAUgraphics/movTx07Reg.png Graphic file (type png)
-<use AAUgraphics/movTx07Reg.png>
-Package pdftex.def Info: AAUgraphics/movTx07Reg.png  used on input line 359. on
- input line 359.
-Package pdftex.def Info: Requested size: 278.83713pt x 148.05244pt on input lin
-e 359.
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-[21
-
- <./AAUgraphics/movTx07Reg.png>]
-<AAUgraphics/movRegresion.png, id=585, 773.13844pt x 376.40625pt>
-File: AAUgraphics/movRegresion.png Graphic file (type png)
-<use AAUgraphics/movRegresion.png>
-Package pdftex.def Info: AAUgraphics/movRegresion.png  used on input line 367. 
-on input line 367.
-Package pdftex.def Info: Requested size: 139.41856pt x 67.87656pt on input line
- 367.
-<AAUgraphics/movRegresionErr.png, id=586, 764.10469pt x 382.42876pt>
-File: AAUgraphics/movRegresionErr.png Graphic file (type png)
-<use AAUgraphics/movRegresionErr.png>
-Package pdftex.def Info: AAUgraphics/movRegresionErr.png  used on input line 36
-7. on input line 367.
-Package pdftex.def Info: Requested size: 139.41856pt x 69.7737pt on input line 
-367.
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-[22
-
- <./AAUgraphics/movRegresion.png> <./AAUgraphics/movRegresionErr.png>]
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-
-Overfull \hbox (1.05998pt too wide) has occurred while \output is active
-[][][] [][]
- []
-
-[23
-
 ]
-Overfull \hbox (56.9055pt too wide) in paragraph at lines 388--388
+Overfull \hbox (56.9055pt too wide) in paragraph at lines 311--311
 []$[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--388
+Underfull \hbox (badness 10000) in paragraph at lines 311--311
 
  []
 
 File: AAUgraphics/aau_waves.pdf Graphic file (type pdf)
 <use AAUgraphics/aau_waves.pdf>
-Package pdftex.def Info: AAUgraphics/aau_waves.pdf  used on input line 388. on 
-input line 388.
+Package pdftex.def Info: AAUgraphics/aau_waves.pdf  used on input line 311. on 
+input line 311.
 Package pdftex.def Info: Requested size: 364.1973pt x 273.1467pt on input line 
-388.
-[24
+311.
+[20
 
 ]
 \tf@nav=\write6
@@ -2192,19 +1902,19 @@ Package pdftex.def Info: Requested size: 364.1973pt x 273.1467pt on input line
 \tf@snm=\write8
 \openout8 = `Diapositivas.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 391.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 391.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
  (./Diapositivas.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 391.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 391.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
 Package rerunfilecheck Info: File `Diapositivas.out' has not changed.
-(rerunfilecheck)             Checksum: 9185D2916F0AC6D6BF1C2F29BE384552;810.
+(rerunfilecheck)             Checksum: 260565804A50D7206717D6781257D781;810.
  ) 
 Here is how much of TeX's memory you used:
- 21706 strings out of 492990
- 419485 string characters out of 6135005
- 495090 words of memory out of 5000000
- 24650 multiletter control sequences out of 15000+600000
+ 21578 strings out of 492990
+ 415738 string characters out of 6135005
+ 493706 words of memory out of 5000000
+ 24550 multiletter control sequences out of 15000+600000
  51727 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,21n,71p,800b,1109s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2217,10 +1927,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
 /amsfonts/symbols/msam7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helv
 etic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Diapositivas.pdf (24 pages, 2314413 bytes).
+Output written on Diapositivas.pdf (20 pages, 1615794 bytes).
 PDF statistics:
- 677 PDF objects out of 1000 (max. 8388607)
- 526 compressed objects within 6 object streams
- 62 named destinations out of 1000 (max. 500000)
- 287 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 496 PDF objects out of 1000 (max. 8388607)
+ 440 compressed objects within 5 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 192 words of extra memory for PDF output out of 10000 (max. 10000000)
 

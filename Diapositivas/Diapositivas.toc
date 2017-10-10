@@ -10,5 +10,5 @@
 \beamer@sectionintoc {3}{Resultados}{12}{0}{3}
 \beamer@subsectionintoc {3}{1}{Caso 1}{12}{0}{3}
 \beamer@subsectionintoc {3}{2}{Caso 2}{15}{0}{3}
-\beamer@subsectionintoc {3}{3}{Caso 3}{19}{0}{3}
-\beamer@sectionintoc {4}{Conclusiones}{23}{0}{4}
+\beamer@subsectionintoc {3}{3}{Caso 3}{17}{0}{3}
+\beamer@sectionintoc {4}{Conclusiones}{19}{0}{4}
