@@ -71,4 +71,3 @@ __Automatic head detection:__
 
 ## Referencias
 - [19] J. Xiao, J. Hays, K. A. Ehinger, A. Oliva, and A. Torralba. SUN database: Large-scale scene recognition from abbey to zoo. In CVPR, 2010.
-
