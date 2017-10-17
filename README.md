@@ -80,6 +80,7 @@ Además, para evaluar la consistencia humana en el seguimiento de la mirada, rec
 
 ## Learning to Follow Gaze
 ![seccion3](imagenes/fig3.png "Arquitectura de Red")
+![seccion3](imagenes/fig3.1.png "Visualizacion de Vias")
 ### Gaze and Saliency Pathways
 - __Saliency map:__
 
