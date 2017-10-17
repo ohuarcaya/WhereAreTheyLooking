@@ -79,6 +79,7 @@ Además, para evaluar la consistencia humana en el seguimiento de la mirada, rec
 ---------------------------------------------
 
 ## Learning to Follow Gaze
+Principalmente el modelo está inspirado en la tendencia de los humanos a seguir la mirada hacia objetos en particular.
 ![seccion3](imagenes/fig3.png "Arquitectura de Red")
 ![seccion3](imagenes/fig3.1.png "Visualizacion de Vias")
 ### Gaze and Saliency Pathways
