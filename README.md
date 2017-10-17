@@ -15,36 +15,50 @@ El enfoque consiste en tomar la posición de la cabeza en la imagen, para identi
 ## Introducción ##
 texto seccion 1
 
-#### Trabajos Relacionados
-- __Saliency__
-- __Gaze__
+### Trabajos Relacionados
+- __Saliency:__
+
+- __Gaze:__
 
 ---------------------------------------------
 
-## Gaze Follow: A Large Scale Gaze-Following dataset
-texto seccion 2
-![seccion3](imagenes/fig2.1.png "Test images examples")
+## Gaze Follow: Un Conjunto de Datos a Gran Escala
+Con el objetivo de realizar este trabajo, se construyó GazeFollow, que es un basto conjunto de datos que incluye imágenes y objetivos visuales que contempla:
+- 1548 imágenes de SUN [19].
+- 33790 imágenes de MS COCO [13].
+- 9135 imágenes de Actions 40 [20].
+- 7791 imágenes de PASCAL [4].
+- 508 imágenes de ImageNet detection challenge [17].
+- 198097 imágenes de The Places dataset [22].
+
+Cuya concatenación resultó en un desafiante conjunto de datos que incluye una inmensa colección de personas en diferentes tipos de escenarios.
+
+![seccion3.1](imagenes/fig2.1.png "Test images examples")
+
+
 ![seccion3](imagenes/fig2.2.png "Test set Statistic")
 
 ---------------------------------------------
 
 ## Learning to Follow Gaze
 ![seccion3](imagenes/fig3.png "Arquitectura de Red")
-#### Gaze and Saliency Pathways
-__Saliency map__
-__Gaze mask__
-__Pathway visualization__
-#### Multimodal Predictions
+### Gaze and Saliency Pathways
+- __Saliency map:__
+
+- __Gaze mask:__
+
+- __Pathway visualization:__
+### Multimodal Predictions
 __Shifted grids:__
-#### Training
+### Training
 __Implementation details:__
 
 ---------------------------------------------
 
 ## Experiments
-#### Setup
-#### Resultados
-#### Análisis
+### Setup
+### Resultados
+### Análisis
 __Ablation study:__
 __Internal representation:__
 __Automatic head detection:__
@@ -52,3 +66,9 @@ __Automatic head detection:__
 ---------------------------------------------
 
 ## Conclusión
+ see [@Ref01] xD
+
+
+## Referencias
+- [19] J. Xiao, J. Hays, K. A. Ehinger, A. Oliva, and A. Torralba. SUN database: Large-scale scene recognition from abbey to zoo. In CVPR, 2010.
+
