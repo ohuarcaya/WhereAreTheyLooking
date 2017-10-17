@@ -66,9 +66,9 @@ Además, para evaluar la consistencia humana en el seguimiento de la mirada, rec
     <td>
       <p><b>Heat Maps:</b><i>Resumen estadístico de las particiones del dataset.</i></p>
       <p>Los tres primeros mapas de calor de la figura muestran la densidad de probabilidad  para la ubicación de la cabeza (1), ubicación de la fijación (2) y la fijación normalizada respecto a la posición de la cabeza(3).</p>
-      <p>Las imágenes de la parte inferior denotan la dirección promedio de rango de visión para las posiciones de cabeza. Siendo el punto sin color el objetivo más óptimo</p>
+      <p>Las imágenes de la parte inferior denotan la dirección promedio de rango de visión (4) para las posiciones de cabeza. Siendo el punto sin color el objetivo más óptimo(5).</p>
     </td>
-    <td style="width:40%">
+    <td>
         <img src="imagenes/fig2.2.png">
     </td>
   </tr>
