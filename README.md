@@ -24,7 +24,7 @@ texto seccion 1
 
 ## Gaze Follow: Un Conjunto de Datos a Gran Escala
 Con el objetivo de realizar este trabajo, se construyó GazeFollow, que es un basto conjunto de datos que incluye imágenes y objetivos visuales que contempla:
-  
+
 __Conjunto de Datos__| __Cantidad de Imágenes__
 :--------- | --------:
 [SUN][1]. | 1548
@@ -77,10 +77,13 @@ Además, para evaluar la consistencia humana en el seguimiento de la mirada, rec
 ---------------------------------------------
 
 ## Learning to Follow Gaze
-Principalmente el modelo está inspirado en la tendencia de los humanos a seguir la mirada hacia objetos en particular. Cuando las personas desean saber donde un persona está viendo en un momento determinado, generalmente ven primero la cabeza y ojos para saber el campo de visión y luego analizar que objetos podrían ser los que esta persona esté observando de acuerdo a su perspectiva.
+Principalmente el modelo está inspirado en la tendencia de los humanos a seguir la mirada hacia objetos en particular. Cuando las personas desean saber donde un persona está viendo en un momento determinado, generalmente ven primero la cabeza y ojos para saber el campo de visión y luego analizar que objetos podrían ser los que esta persona este observando de acuerdo a su perspectiva.
 ![seccion3](imagenes/fig3.png "Arquitectura de Red")
-![seccion3](imagenes/fig3.1.png "Visualizacion de Vias")
-![seccion3](imagenes/fig3.2.png "Visualizacion de Vias")
+![seccion3](imagenes/fig4.a1.png "Gaze mask")
+![seccion3](imagenes/fig4.a2.png "Gaze mask")
+![seccion3](imagenes/fig4.b1.png "Saliency")
+![seccion3](imagenes/fig4.b2.png "Saliency")
+![seccion3](imagenes/fig4.b3.png "Saliency")
 ### Gaze and Saliency Pathways
 - __Saliency map:__
 
@@ -105,8 +108,6 @@ __Automatic head detection:__
 ---------------------------------------------
 
 ## Conclusión
- see [@Ref01] xD
 
 
 ## Referencias
-- [19] J. Xiao, J. Hays, K. A. Ehinger, A. Oliva, and A. Torralba. SUN database: Large-scale scene recognition from abbey to zoo. In CVPR, 2010.
