@@ -94,6 +94,7 @@ A continuación se mostrará imagenes que representan el mapa de saliency y la m
 ![seccion3](imagenes/fig3.2.png "Saliency")
 
 ### Multimodal Predictions
+A pesar que los humanos casi siempre son capaces de seguir la mirada de una persona de manera confiable en algunas oportunidades esta puede ser ambigua, por ejemplo si hay muchos objetos salientes en la imagen o la dirección de la vista de la persona no es muy bien percibida entonces habrá este tipo de incertidumbre.
 __Shifted grids:__
 ### Training
 __Implementation details:__
