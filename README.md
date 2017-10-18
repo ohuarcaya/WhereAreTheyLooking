@@ -85,7 +85,7 @@ Principalmente el modelo está inspirado en la tendencia de los humanos a seguir
 ![seccion3](imagenes/fig3.2.png "Visualizacion de Vias")
 ### Gaze and Saliency Pathways
 - __Saliency map:__
-Suponiendo que tenemos una imagen en particular { x }_{ i } y una persona para la cual deseamos predecir su mirada. Parametrizamos a esta persona con una ubicación espacial cuantificada de la cabeza de la persona { x }_{ p } y un recortado. 
+Suponiendo que tenemos una imagen en particular ${ x }_{ i }$ y una persona para la cual deseamos predecir su mirada. Parametrizamos a esta persona con una ubicación espacial cuantificada de la cabeza de la persona ${ x }_{ p }$ y un recortado. 
 - __Gaze mask:__
 
 - __Pathway visualization:__
