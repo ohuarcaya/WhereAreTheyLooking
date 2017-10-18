@@ -84,12 +84,12 @@ Principalmente el modelo está inspirado en la tendencia de los humanos a seguir
 ![seccion3](imagenes/fig3.1.png "Visualizacion de Vias")
 ![seccion3](imagenes/fig3.2.png "Visualizacion de Vias")
 ### Gaze and Saliency Pathways
-Suponiendo que tenemos una imagen en particular x<sub>i</sub> y una persona para la cual deseamos predecir su mirada. Parametrizamos a esta persona con una ubicación espacial cuantificada de la cabeza de la persona ***x<sub>p</sub>***, un recortado, una imagen de primer plano de su cabeza ***x<sub>h</sub>***. Lo que se busca es predecir la ubicación espacial de la fijación de la persona representado por ***y*** utilizando redes profundas.
-EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial $ \forall x \in X, \quad \exists y \leq \epsilon $.  
+Suponiendo que tenemos una imagen en particular x<sub>i</sub> y una persona para la cual deseamos predecir su mirada. Parametrizamos a esta persona con una ubicación espacial cuantificada de la cabeza de la persona x<sub>p</sub>, un recortado, una imagen de primer plano de su cabeza x<sub>h</sub>. Lo que se busca es predecir la ubicación espacial de la fijación de la persona representado por ***y*** utilizando redes profundas.
+EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial.  
 - __Saliency map:__
-
+Para formar la vía saliency se usa una red convolucional en toda la imagen para producir una representación oculta de tamaño ***D X D X K***
 - __Gaze mask:__
-
+De forma similar, para el camino de la mirada usamos tambien una red convolucional pero en la imagen de la cabeza, luego se concatena su salida con la posición de la cabeza y se utiliza varias capas completamente conectadas y un sigmoide para predecir la mascara de mirada de dimensiones ***D X D***.
 - __Pathway visualization:__
 ### Multimodal Predictions
 __Shifted grids:__
