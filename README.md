@@ -90,8 +90,11 @@ Para formar la vía saliency se usa una red convolucional en toda la imagen para
 De forma similar, para el camino de la mirada usamos tambien una red convolucional pero en la imagen de la cabeza, luego se concatena su salida con la posición de la cabeza y se utiliza varias capas completamente conectadas y un sigmoide para predecir la mascara de mirada de dimensiones ***D x D***.
 - __Pathway visualization:__
 A continuación se mostrará imagenes que representan el mapa de saliency y la máscara de gaze aprendida por nuestra red la cual aprende una noción de saliencia que es relevante para la tarea de seguimiento de mirada. La primera imagen muestra la salida de la máscara de mirada para distintas posiciones de cabeza. En la segunda se muestra tres partes en una solo imagen, la primera parte es la imagen de entrada, la segunda parte es la saliencia de visualización libre estimada y la saliencia que sigue la mirada estimada usando nuestro modelo. 
-![seccion3](imagenes/fig3.1.png "Gaze")
-![seccion3](imagenes/fig3.2.png "Saliency")
+![seccion3](imagenes/fig4.a1.png "Gaze mask")
+![seccion3](imagenes/fig4.a2.png "Gaze mask")
+![seccion3](imagenes/fig4.b1.png "Saliency")
+![seccion3](imagenes/fig4.b2.png "Saliency")
+![seccion3](imagenes/fig4.b3.png "Saliency")
 
 ### Multimodal Predictions
 A pesar que los humanos casi siempre son capaces de seguir la mirada de una persona de manera confiable en algunas oportunidades esta puede ser ambigua, por ejemplo si hay muchos objetos salientes en la imagen o la dirección de la vista de la persona no es muy bien percibida entonces habrá este tipo de incertidumbre.
