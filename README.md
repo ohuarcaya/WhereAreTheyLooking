@@ -101,8 +101,16 @@ A pesar que los humanos casi siempre son capaces de seguir la mirada de una pers
 __Shifted grids:__
 Para la clasificación, en primer lugar se debe elegir el número de celdas, ***N***. Pero la eleción de este parámetro es importante ya que si se eligiera un valor bajo de ***N*** tendríamos muy poca precisión en los resultados, en cambio si eligieramos una valor alto de ***N*** tendríamos más precisión pero el proceso de aprendizaje sería más difícil porque las perdidas de clasificación estandar no penalizarían adecuadamente las categorías espaciales.
 ### Training
+La red end-to-end que utilizamos es creada usando backpropagation además se usó un ***softmax loss***(se define como la combinación de un ***cross-entropy loss***, una ***softmax function*** y la última capa completamente conectada) para cada ***shifted grid*** y promediar sus pérdidas. Además debido a que el modelo solo es supervisado con fijaciones de la mirada, no se considera que las vías de la mirada y la saliencia resuelvan sus respectivos subproblemas, mas bién se espera que la propia estructura de nuestro modelo resuelva automaticamente estos conflictos. 
+
 __Implementation details:__
-Para la implementación del modelo se uso un framework de deep learning llamado ***Caffe***, las capas convolucionales en las dos vías, tanto de la de saliency como en la de gaze, están basadas en la arquitectura de las 5 primeras capas de la arquitectura de AlexNet.
+Para la implementación del modelo se usó un framework de deep learning llamado ***Caffe***, las capas convolucionales en las dos vías, tanto de la de saliency como en la de gaze, están basadas en la arquitectura de las 5 primeras capas de la arquitectura de AlexNet.
+
+![seccion3](imagenes/fig5.1.png "Resultados Cualitativos")
+![seccion3](imagenes/fig5.2.png "Resultados Cualitativos")
+![seccion3](imagenes/fig5.3.png "Resultados Cualitativos")
+
+<img src="imagenes/fig5.4.png" width="295"/> <img src="imagenes/fig5.5.png" width="295"/> <img src="imagenes/fig5.6.png" width="290"/> 
 
 ---------------------------------------------
 
