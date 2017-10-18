@@ -77,7 +77,10 @@ Además, para evaluar la consistencia humana en el seguimiento de la mirada, rec
 ---------------------------------------------
 
 ## Learning to Follow Gaze
+Principalmente el modelo está inspirado en la tendencia de los humanos a seguir la mirada hacia objetos en particular. Cuando las personas desean saber donde un persona está viendo en un momento determinado, generalmente ven primero la cabeza y ojos para saber el campo de visión y luego analizar que objetos podrían ser los que esta persona esté observando de acuerdo a su perspectiva.
 ![seccion3](imagenes/fig3.png "Arquitectura de Red")
+![seccion3](imagenes/fig3.1.png "Visualizacion de Vias")
+![seccion3](imagenes/fig3.2.png "Visualizacion de Vias")
 ### Gaze and Saliency Pathways
 - __Saliency map:__
 
@@ -102,3 +105,8 @@ __Automatic head detection:__
 ---------------------------------------------
 
 ## Conclusión
+ see [@Ref01] xD
+
+
+## Referencias
+- [19] J. Xiao, J. Hays, K. A. Ehinger, A. Oliva, and A. Torralba. SUN database: Large-scale scene recognition from abbey to zoo. In CVPR, 2010.
