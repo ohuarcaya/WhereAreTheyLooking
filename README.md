@@ -24,10 +24,8 @@ texto seccion 1
 
 ## Gaze Follow: Un Conjunto de Datos a Gran Escala
 Con el objetivo de realizar este trabajo, se construyó GazeFollow, que es un basto conjunto de datos que incluye imágenes y objetivos visuales que contempla:
-
-<center>
   
-Conjunto de Datos| Cantidad de Imágenes
+__Conjunto de Datos__| __Cantidad de Imágenes__
 :--------- | --------:
 [SUN][1]. | 1548
 [MS COCO][2] | 33790
@@ -35,7 +33,6 @@ Conjunto de Datos| Cantidad de Imágenes
 [PASCAL][4] | 7791
 [ImageNet][5]. | 508
 [MIT Places][6]. | 198097
-</center>
 
 [1]: (https://groups.csail.mit.edu/vision/SUN/)
 [2]: (http://cocodataset.org/#home).
