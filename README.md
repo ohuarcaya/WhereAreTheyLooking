@@ -79,14 +79,7 @@ Además, para evaluar la consistencia humana en el seguimiento de la mirada, rec
 ## Learning to Follow Gaze
 Principalmente el modelo está inspirado en la tendencia de los humanos a seguir la mirada hacia objetos en particular. Cuando las personas desean saber donde un persona está viendo en un momento determinado, generalmente ven primero la cabeza y ojos para saber el campo de visión y luego analizar que objetos podrían ser los que esta persona este observando de acuerdo a su perspectiva.
 ![seccion3](imagenes/fig3.png "Arquitectura de Red")
-<<<<<<< HEAD
-=======
-![seccion3](imagenes/fig4.a1.png "Gaze mask")
-![seccion3](imagenes/fig4.a2.png "Gaze mask")
-![seccion3](imagenes/fig4.b1.png "Saliency")
-![seccion3](imagenes/fig4.b2.png "Saliency")
-![seccion3](imagenes/fig4.b3.png "Saliency")
->>>>>>> 6f09888d9124a229e9e06c9582ac69360deaa458
+
 ### Gaze and Saliency Pathways
 Suponiendo que tenemos una imagen en particular x<sub>i</sub> y una persona para la cual deseamos predecir su mirada. Parametrizamos a esta persona con una ubicación espacial cuantificada de la cabeza de la persona x<sub>p</sub>, un recortado, una imagen de primer plano de su cabeza x<sub>h</sub>. Lo que se busca es predecir la ubicación espacial de la fijación de la persona representado por ***y*** utilizando redes profundas.
 EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial.  
