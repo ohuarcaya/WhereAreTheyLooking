@@ -81,8 +81,6 @@ Además, para evaluar la consistencia humana en el seguimiento de la mirada, rec
 ## Learning to Follow Gaze
 Principalmente el modelo está inspirado en la tendencia de los humanos a seguir la mirada hacia objetos en particular. Cuando las personas desean saber donde un persona está viendo en un momento determinado, generalmente ven primero la cabeza y ojos para saber el campo de visión y luego analizar que objetos podrían ser los que esta persona esté observando de acuerdo a su perspectiva.
 ![seccion3](imagenes/fig3.png "Arquitectura de Red")
-![seccion3](imagenes/fig3.1.png "Visualizacion de Vias")
-![seccion3](imagenes/fig3.2.png "Visualizacion de Vias")
 ### Gaze and Saliency Pathways
 Suponiendo que tenemos una imagen en particular x<sub>i</sub> y una persona para la cual deseamos predecir su mirada. Parametrizamos a esta persona con una ubicación espacial cuantificada de la cabeza de la persona x<sub>p</sub>, un recortado, una imagen de primer plano de su cabeza x<sub>h</sub>. Lo que se busca es predecir la ubicación espacial de la fijación de la persona representado por ***y*** utilizando redes profundas.
 EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial.  
@@ -91,6 +89,10 @@ Para formar la vía saliency se usa una red convolucional en toda la imagen para
 - __Gaze mask:__
 De forma similar, para el camino de la mirada usamos tambien una red convolucional pero en la imagen de la cabeza, luego se concatena su salida con la posición de la cabeza y se utiliza varias capas completamente conectadas y un sigmoide para predecir la mascara de mirada de dimensiones ***D x D***.
 - __Pathway visualization:__
+A continuación se mostrará imagenes que representan el mapa de saliency y la máscara de gaze aprendida por nuestra red la cual aprende una noción de saliencia que es relevante para la tarea de seguimiento de mirada. La primera imagen muestra la salida de la máscara de mirada para distintas posiciones de cabeza. En la segunda se muestra tres partes en una solo imagen, la primera parte es la imagen de entrada, la segunda parte es la saliencia de visualización libre estimada y la saliencia que sigue la mirada estimada usando nuestro modelo. 
+![seccion3](imagenes/fig3.1.png "Gaze")
+![seccion3](imagenes/fig3.2.png "Saliency")
+
 ### Multimodal Predictions
 __Shifted grids:__
 ### Training
