@@ -103,7 +103,7 @@ __Shifted grids:__
 Para la clasificación, en primer lugar se debe elegir el número de celdas, ***N***. Pero la eleción de este parámetro es importante ya que si se eligiera un valor bajo de ***N*** tendríamos muy poca precisión en los resultados, en cambio si eligieramos una valor alto de ***N*** tendríamos más precisión pero el proceso de aprendizaje sería más difícil porque las perdidas de clasificación estandar no penalizarían adecuadamente las categorías espaciales.
 ### Training
 __Implementation details:__
-
+Para la implementación del modelo se uso un framework de deep learning llamado ***Caffe***
 ---------------------------------------------
 
 ## Experiments
