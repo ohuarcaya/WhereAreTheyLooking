@@ -110,7 +110,7 @@ Para la implementación del modelo se usó un framework de deep learning llamado
 ![seccion3](imagenes/fig5.2.png "Resultados Cualitativos")
 ![seccion3](imagenes/fig5.3.png "Resultados Cualitativos")
 ![seccion3](imagenes/fig5.4.png) ![seccion3](imagenes/fig5.5.png) ![seccion3](imagenes/fig5.6.png)
-<img src="imagenes/fig5.4.png" width="425"/> <img src="imagenes/fig5.5.png" width="425"/> 
+<img src="imagenes/fig5.4.png" width="300"/> <img src="imagenes/fig5.5.png" width="300"/> <img src="imagenes/fig5.6.png" width="300"/> 
 
 ---------------------------------------------
 
