@@ -122,12 +122,23 @@ La red end-to-end que utilizamos es creada usando backpropagation además se us�
 __Implementation details:__
 Para la implementación del modelo se usó un framework de deep learning llamado ***Caffe***, las capas convolucionales en las dos vías, tanto de la de saliency como en la de gaze, están basadas en la arquitectura de las 5 primeras capas de la arquitectura de AlexNet.
 
-![seccion3](imagenes/fig5.1.png "Resultados Cualitativos")
-![seccion3](imagenes/fig5.2.png "Resultados Cualitativos")
-![seccion3](imagenes/fig5.3.png "Resultados Cualitativos")
-
-<img src="imagenes/fig5.4.png" width="295"/> <img src="imagenes/fig5.5.png" width="295"/> <img src="imagenes/fig5.6.png" width="290"/>
-
+<table>
+    <tr>
+      <td width="300"><img src="imagenes/fig5.1.png"></td>
+      <td width="100"><img src="imagenes/fig5.4.png"/></td>
+    </tr>
+    <tr>
+      <td><img src="imagenes/fig5.2.png"></td>
+      <td><img src="imagenes/fig5.5.png"/></td>
+    </tr>
+    <tr>
+      <td><img src="imagenes/fig5.3.png"></td>
+      <td><img src="imagenes/fig5.6.png"/></td>
+    </tr>
+    <tr>
+      <td colspan="2"><p style="text-align:center">__Tema Imagen:__ _Aquí va la descripción_</p></td>
+    </tr>
+</table>
 ---------------------------------------------
 
 ## Experiments
