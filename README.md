@@ -31,21 +31,14 @@ Con el objetivo de realizar este trabajo, se construyó GazeFollow, que es un ba
       <th><b>Conjunto de Datos</b></th>
       <th><b>Cantidad de Imágenes</b></th>
     </tr>
-    <tr><td>[SUN][1] </td><td><p style="text-align:right">1548</p></td></tr>
-    <tr><td>[MS COCO][2] </td><td><p style="text-align:right">33790</p></td></tr>
-    <tr><td>[Actions 40][3] </td><td><p style="text-align:right">9135</p></td></tr>
-    <tr><td>[PASCAL][4] </td><td><p style="text-align:right">7791</p></td></tr>
-    <tr><td>[ImageNet][5]. </td><td><p style="text-align:right">508</p></td></tr>
-    <tr><td>[MIT Places][6]. </td><td><p style="text-align:right">198097</p></td></tr>
+    <tr><td><a href="https://groups.csail.mit.edu/vision/SUN">SUN </td><td><p style="text-align:right">1548</p></td></tr>
+    <tr><td><a href="http://cocodataset.org/#home">MS COCO </td><td><p style="text-align:right">33790</p></td></tr>
+    <tr><td><a href="http://vision.stanford.edu/Datasets/40actions.html">Actions 40 </td><td><p style="text-align:right">9135</p></td></tr>
+    <tr><td><a href="http://host.robots.ox.ac.uk/pascal/VOC/databases.html">PASCAL</td><td><p style="text-align:right">7791</p></td></tr>
+    <tr><td><a href="http://www.image-net.org">ImageNet </td><td><p style="text-align:right">508</p></td></tr>
+    <tr><td><a href="http://places.csail.mit.edu">MIT Places </td><td><p style="text-align:right">198097</p></td></tr>
   </table>
 </center>
-
-[1]: (https://groups.csail.mit.edu/vision/SUN/)
-[2]: (http://cocodataset.org/#home).
-[3]: (http://vision.stanford.edu/Datasets/40actions.html).
-[4]: (http://host.robots.ox.ac.uk/pascal/VOC/databases.html).
-[5]: (http://www.image-net.org/)
-[6]: (http://places.csail.mit.edu/)
 
 Cuya concatenación resultó en un desafiante conjunto de datos que incluye una inmensa colección de personas en diferentes tipos de escenarios.
 
