@@ -104,7 +104,7 @@ De forma similar, para el camino de la mirada usamos tambien una red convolucion
 - __Pathway visualization:__
 A continuación se mostrará imagenes que representan el mapa de saliency y la máscara de gaze aprendida por nuestra red la cual aprende una noción de saliencia que es relevante para la tarea de seguimiento de mirada. La primera imagen muestra la salida de la máscara de mirada para distintas posiciones de cabeza. En la segunda se muestra tres partes en una solo imagen, la primera parte es la imagen de entrada, la segunda parte es la saliencia de visualización libre estimada y la saliencia que sigue la mirada estimada usando nuestro modelo.
 
-| Gaze mask    | Saliency     |
+| __Gaze mask__    | __Saliency__     |
 | :------------- | :------------- |
 |![seccion3](imagenes/fig4.a1.png "Gaze mask") | ![seccion3](imagenes/fig4.b1.png "Saliency")|
 | ![seccion3](imagenes/fig4.a2.png "Gaze mask")| ![seccion3](imagenes/fig4.b2.png "Saliency")|
@@ -139,8 +139,8 @@ Para la implementación del modelo se usó un framework de deep learning llamado
       <td colspan="2"><p style="text-align:center"><b>Tema Imagen:</b> <i>Aquí va la descripción</i></p></td>
     </tr>
 </table>
----------------------------------------------
 
+---------------------------------------------
 ## Experiments
 ### Setup
 ### Resultados
