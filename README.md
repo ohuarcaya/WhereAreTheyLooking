@@ -79,21 +79,38 @@ Además, para evaluar la consistencia humana en el seguimiento de la mirada, rec
 ## Learning to Follow Gaze
 Principalmente el modelo está inspirado en la tendencia de los humanos a seguir la mirada hacia objetos en particular. Cuando las personas desean saber donde un persona está viendo en un momento determinado, generalmente ven primero la cabeza y ojos para saber el campo de visión y luego analizar que objetos podrían ser los que esta persona este observando de acuerdo a su perspectiva.
 ![seccion3](imagenes/fig3.png "Arquitectura de Red")
+
+### Gaze and Saliency Pathways
+Suponiendo que tenemos una imagen en particular x<sub>i</sub> y una persona para la cual deseamos predecir su mirada. Parametrizamos a esta persona con una ubicación espacial cuantificada de la cabeza de la persona x<sub>p</sub>, un recortado, una imagen de primer plano de su cabeza x<sub>h</sub>. Lo que se busca es predecir la ubicación espacial de la fijación de la persona representado por ***y*** utilizando redes profundas.
+EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial.  
+- __Saliency map:__
+Para formar la vía saliency se usa una red convolucional en toda la imagen para producir una representación oculta de tamaño ***D x D x K***
+- __Gaze mask:__
+De forma similar, para el camino de la mirada usamos tambien una red convolucional pero en la imagen de la cabeza, luego se concatena su salida con la posición de la cabeza y se utiliza varias capas completamente conectadas y un sigmoide para predecir la mascara de mirada de dimensiones ***D x D***.
+- __Pathway visualization:__
+A continuación se mostrará imagenes que representan el mapa de saliency y la máscara de gaze aprendida por nuestra red la cual aprende una noción de saliencia que es relevante para la tarea de seguimiento de mirada. La primera imagen muestra la salida de la máscara de mirada para distintas posiciones de cabeza. En la segunda se muestra tres partes en una solo imagen, la primera parte es la imagen de entrada, la segunda parte es la saliencia de visualización libre estimada y la saliencia que sigue la mirada estimada usando nuestro modelo. 
 ![seccion3](imagenes/fig4.a1.png "Gaze mask")
 ![seccion3](imagenes/fig4.a2.png "Gaze mask")
 ![seccion3](imagenes/fig4.b1.png "Saliency")
 ![seccion3](imagenes/fig4.b2.png "Saliency")
 ![seccion3](imagenes/fig4.b3.png "Saliency")
-### Gaze and Saliency Pathways
-- __Saliency map:__
 
-- __Gaze mask:__
-
-- __Pathway visualization:__
 ### Multimodal Predictions
+A pesar que los humanos casi siempre son capaces de seguir la mirada de una persona de manera confiable en algunas oportunidades esta puede ser ambigua, por ejemplo si hay muchos objetos salientes en la imagen o la dirección de la vista de la persona no es muy bien percibida entonces habrá este tipo de incertidumbre.
+
 __Shifted grids:__
+Para la clasificación, en primer lugar se debe elegir el número de celdas, ***N***. Pero la eleción de este parámetro es importante ya que si se eligiera un valor bajo de ***N*** tendríamos muy poca precisión en los resultados, en cambio si eligieramos una valor alto de ***N*** tendríamos más precisión pero el proceso de aprendizaje sería más difícil porque las perdidas de clasificación estandar no penalizarían adecuadamente las categorías espaciales.
 ### Training
+La red end-to-end que utilizamos es creada usando backpropagation además se usó un ***softmax loss***(se define como la combinación de un ***cross-entropy loss***, una ***softmax function*** y la última capa completamente conectada) para cada ***shifted grid*** y promediar sus pérdidas. Además debido a que el modelo solo es supervisado con fijaciones de la mirada, no se considera que las vías de la mirada y la saliencia resuelvan sus respectivos subproblemas, mas bién se espera que la propia estructura de nuestro modelo resuelva automaticamente estos conflictos. 
+
 __Implementation details:__
+Para la implementación del modelo se usó un framework de deep learning llamado ***Caffe***, las capas convolucionales en las dos vías, tanto de la de saliency como en la de gaze, están basadas en la arquitectura de las 5 primeras capas de la arquitectura de AlexNet.
+
+![seccion3](imagenes/fig5.1.png "Resultados Cualitativos")
+![seccion3](imagenes/fig5.2.png "Resultados Cualitativos")
+![seccion3](imagenes/fig5.3.png "Resultados Cualitativos")
+
+<img src="imagenes/fig5.4.png" width="295"/> <img src="imagenes/fig5.5.png" width="295"/> <img src="imagenes/fig5.6.png" width="290"/> 
 
 ---------------------------------------------
 
