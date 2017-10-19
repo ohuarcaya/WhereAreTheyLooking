@@ -25,14 +25,20 @@ texto seccion 1
 ## Gaze Follow: Un Conjunto de Datos a Gran Escala
 Con el objetivo de realizar este trabajo, se construyó GazeFollow, que es un basto conjunto de datos que incluye imágenes y objetivos visuales que contempla:
 
-__Conjunto de Datos__| __Cantidad de Imágenes__
-:--------- | --------:
-[SUN][1]. | 1548
-[MS COCO][2] | 33790
-[Actions 40][3] | 9135
-[PASCAL][4] | 7791
-[ImageNet][5]. | 508
-[MIT Places][6]. | 198097
+<center>
+  <table>
+    <tr>
+      <th>__Conjunto de Datos__</th>
+      <th>__Cantidad de Imágenes__</th>
+    </tr>
+    <tr><td>[SUN][1] </td><td><p style="text-align:right">1548</p></td></tr>
+    <tr><td>[MS COCO][2] </td><td><p style="text-align:right">33790</p></td></tr>
+    <tr><td>[Actions 40][3] </td><td><p style="text-align:right">9135</p></td></tr>
+    <tr><td>[PASCAL][4] </td><td><p style="text-align:right">7791</p></td></tr>
+    <tr><td>[ImageNet][5]. </td><td><p style="text-align:right">508</p></td></tr>
+    <tr><td>[MIT Places][6]. </td><td><p style="text-align:right">198097</p></td></tr>
+  </table>
+</center>
 
 [1]: (https://groups.csail.mit.edu/vision/SUN/)
 [2]: (http://cocodataset.org/#home).
@@ -54,32 +60,33 @@ Se separó la data en train (117361) y test (4782); con la condición que cada p
 Para evitar bias, las imágenes de prueba se distribuyeran uniformemente en toda la imagen.
 Además, para evaluar la consistencia humana en el seguimiento de la mirada, recogimos 10 anotaciones de la mirada por persona para el conjunto de test.
 
-<center>
-  <img src="imagenes/fig2.1.png">
-  <p><b>GazeFollow Dataset:</b><i>Se contemplan las anotaciones del objetivo de la mirada para cierto grupo de imágenes</i></p>
-</center>
-
-
-| Header One     | Heat Maps     |
-| :------------- | :------------- |
-| Los tres primeros mapas de calor de la figura muestran la densidad de probabilidad  para la ubicación de la cabeza | ![testsize](imagenes/fig2.b1.png "Head Location Density") |
-
- (1), ubicación de la fijación (2) y la fijación normalizada respecto a la posición de la cabeza(3).
-
 <table>
-  <tr>
-    <td>
-      <p><b>Heat Maps:</b><i>Resumen estadístico de las particiones del dataset.</i></p>
-      <p>Los tres primeros mapas de calor de la figura muestran la densidad de probabilidad  para la ubicación de la cabeza (1), ubicación de la fijación (2) y la fijación normalizada respecto a la posición de la cabeza(3).</p>
-      <p>Las imágenes de la parte inferior denotan la dirección promedio de rango de visión (4) para las posiciones de cabeza. Siendo el punto sin color el objetivo más óptimo(5).</p>
-    </td>
-    <td>
-        <img src="imagenes/fig2.2.png">
-    </td>
+  <tr><img src="imagenes/fig2.1.png"></tr>
+  <tr><p style="text-align:center"><b>GazeFollow Dataset:</b><i>Se contemplan las anotaciones del objetivo de la mirada para cierto grupo de imágenes</i></p>
   </tr>
 </table>
 
 
+<table>
+  <tr>
+    <th colspan="3"><p style="text-align:center">Densidad de Probabilidad</p></th>
+    <th colspan="2"><p style="text-align:center">Dirección Objetivo Promedio</p></th>
+  </tr>
+  <tr>
+    <td width="150"><img src="imagenes/fig2.b1.png"></td>
+    <td width="150"><img src="imagenes/fig2.b2.png"></td>
+    <td width="150"><img src="imagenes/fig2.b3.png"></td>
+    <td width="150"><img src="imagenes/fig2.b4.png"></td>
+    <td width="150"><img src="imagenes/fig2.b5.png"></td>
+  </tr>
+  <tr>
+    <td>Densidad de probabilidad para la ubicación de la cabeza.</td>
+    <td>Densidad de probabilidad para la ubicación de la fijación objetivo.</td>
+    <td>Densidad de probabilidad para la fijación normalizada respecto a la posición de la cabeza.</td>
+    <td>Densidad de dirección promedio de fijación objetivo según posición de la cabeza.</td>
+    <td>Color de código de intensidad de fijación objetivo (centro punto más probable).</td>
+  </tr>
+</table>
 
 ---------------------------------------------
 
