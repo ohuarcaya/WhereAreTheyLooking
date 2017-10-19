@@ -26,10 +26,10 @@ texto seccion 1
 Con el objetivo de realizar este trabajo, se construyó GazeFollow, que es un basto conjunto de datos que incluye imágenes y objetivos visuales que contempla:
 
 <center>
-  <table>
+  <table width="50%">
     <tr>
-      <th>__Conjunto de Datos__</th>
-      <th>__Cantidad de Imágenes__</th>
+      <th><b>Conjunto de Datos</b></th>
+      <th><b>Cantidad de Imágenes</b></th>
     </tr>
     <tr><td>[SUN][1] </td><td><p style="text-align:right">1548</p></td></tr>
     <tr><td>[MS COCO][2] </td><td><p style="text-align:right">33790</p></td></tr>
@@ -136,7 +136,7 @@ Para la implementación del modelo se usó un framework de deep learning llamado
       <td><img src="imagenes/fig5.6.png"/></td>
     </tr>
     <tr>
-      <td colspan="2"><p style="text-align:center">__Tema Imagen:__ _Aquí va la descripción_</p></td>
+      <td colspan="2"><p style="text-align:center"><b>Tema Imagen:</b> <i>Aquí va la descripción</i></p></td>
     </tr>
 </table>
 ---------------------------------------------
