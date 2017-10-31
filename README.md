@@ -142,6 +142,7 @@ Para la implementación del modelo se usó un framework de deep learning llamado
 | Random         | 0.504 | 0.484 | 0.391 | 69°    |
 | One human      | 0.924 | 0.096 | 0.040 | 11°    |
 ---------------------------------------------
+
 ## Experiments
 ### Setup
 ### Resultados
