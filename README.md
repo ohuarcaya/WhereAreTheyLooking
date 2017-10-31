@@ -127,7 +127,7 @@ Para la implementación del modelo se usó un framework de deep learning llamado
       <td><img src="imagenes/fig5.6.png"/></td>
     </tr>
     <tr>
-      <td colspan="2"><p style="text-align:center"><b>Resultados Cualitativos:</b> <i> Se pueden observar varias imágenes que son ejemplos de éxitos y errores del modelo, donde las lineas rojas corresponden a las miradas verdaderas y las lineas amarillas a las miradas pronosticadas</i></p></td>
+      <td colspan="2"><p style="text-align:center"><b>Resultados Cualitativos:</b> <i> Se pueden observar varias imágenes que son ejemplos de éxitos y errores del modelo, donde las lineas rojas corresponden a las miradas verdaderas y las lineas amarillas a las miradas pronosticadas.</i></p></td>
     </tr>
 </table>
 
