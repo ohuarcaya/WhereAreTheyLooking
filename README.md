@@ -127,10 +127,20 @@ Para la implementación del modelo se usó un framework de deep learning llamado
       <td><img src="imagenes/fig5.6.png"/></td>
     </tr>
     <tr>
-      <td colspan="2"><p style="text-align:center"><b>Tema Imagen:</b> <i>Aquí va la descripción</i></p></td>
+      <td colspan="2"><p style="text-align:center"><b>Tema Imagen:</b> <i>***Resultados Cualitativos:*** Se pueden observar varias imágenes que son ejemplos de éxitos y errores del modelo, donde las lineas rojas corresponden a las miradas verdaderas y las lineas amarillas a las miradas pronosticadas</i></p></td>
     </tr>
 </table>
 
+|     Modelo     | AUC   | Dist. | Dist. | Angulo |
+|:--------------:|-------|-------|-------|-------:|
+| Nuestro        | 0.878 | 0.190 | 0.113 | 24°    |
+| SVM+shift grid | 0.788 | 0.268 | 0.186 | 40°    |
+| SVM+one grid   | 0.758 | 0.276 | 0.193 | 43°    |
+| Judd           | 0.711 | 0.337 | 0.250 | 54°    |
+| Fixed bias     | 0.674 | 0.306 | 0.219 | 48°    |
+| Center         | 0.633 | 0.313 | 0.230 | 49°    |
+| Random         | 0.504 | 0.484 | 0.391 | 69°    |
+| One human      | 0.924 | 0.096 | 0.040 | 11°    |
 ---------------------------------------------
 ## Experiments
 ### Setup
