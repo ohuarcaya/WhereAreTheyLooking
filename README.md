@@ -143,6 +143,7 @@ Para la implementación del modelo se usó un framework de deep learning llamado
 | One human      | 0.924 | 0.096 | 0.040 | 11°    |
 ---------------------------------------------
 
+
 ## Experiments
 ### Setup
 ### Resultados
