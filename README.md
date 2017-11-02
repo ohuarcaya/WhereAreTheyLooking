@@ -131,6 +131,7 @@ Para la implementación del modelo se usó un framework de deep learning llamado
     </tr>
 </table>
 
+
 |     Modelo     | AUC   | Dist. | Dist. | Ángulo |                                                                      
 |:--------------:|-------|-------|-------|-------:|
 | Nuestro        | 0.878 | 0.190 | 0.113 |  24°   |
