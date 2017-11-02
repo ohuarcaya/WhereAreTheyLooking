@@ -13,8 +13,7 @@ El enfoque consiste en tomar la posición de la cabeza en la imagen, para identi
 ---------------------------------------------
 
 ## Introducción ##
-La capacidad de poder hacer el seguimiento de la mirada de otra persona con un objeto o persona con el que esté interactuando con una gran precisión, es una capacidad del ser humano que ayuda a entender que es lo que hace una persona o las intenciones de la persona observada, esta tarea seria muy importante para un sistema de vision artificial, si embargo a pesar de la importancia de este tema, pocos han explorado la vision por ordenador que se propone este paper, viendo limitantes en los trabajos relacionados comparadas al paper que desarrollaremos, limitantes como solo ver la interaccion de personas que se miran unas a otras, seguimiento ocular de un conjunto de persona mediante multiples imagenes.
-
+La capacidad de poder hacer el seguimiento de la mirada de otra persona con gran precisión, hacia un objeto o persona con el que esté interactuando. Es una capacidad del ser humano que ayuda a entender que es lo que hace, o que intenciones tiene la persona observada; esta tarea sería muy importante para un sistema de visión artificial.
 
 <table>
   <tr>
@@ -42,14 +41,12 @@ __Funcionamiento:__ _Se trata de una arquitectura profunda que aprende a combina
 __Salida:__ _Distribución sobre posibles ubicaciones que la persona seleccionada podría estar mirando. (gráficamente como un mapa de prominencia desde el punto de vista de la persona)_
 
 
-
-
 ### Trabajos Relacionados
-- __Saliency:__ la mayoria de los modelos de **saliency** se centran en la predicción la prominencia social, la probabilidad de atención en la escena mientras un observador es una imagen en la escena, pruebas con este modelo mostraron que las personas tienden a observar la zona de fijacion ocular, tendiendo a ver objeos dentro esta zona, ya que esta zona atraera la zona del observador
+- __Saliency:__ la mayoria de los modelos de **saliency** se centran en la predicción de la prominencia social, la probabilidad de atención en la escena mientras un observador es una imagen en la escena, pruebas con este modelo mostraron que las personas tienden a observar la zona de fijación ocular, tendiendo a ver objetos dentro esta zona, ya que esta zona atraera la atención del observador.
 
-- __Gaze:__ aun es limitado ya que se este modelo estima la direccion de la mirada sin poder identificar el objeto o persona que interactua con nuestra persona observada, además en algunos desarrollos de este modelo tienen una dependencia de un detector facial, impidiendo estimar la mirada de personas que miran hacia otro lado de la cámara, un método usa un rastreador ocular basandose en la direccion de la mirada aprendiendo mapas de probabilidad que predicen las zonas de fijacion que salen de la region de la cabeza, asi como las fijaciones en la zona de la cabeza, ambas dependientes del tamaño de la cabeza y el angulo de postura, luego aprendemos una combinacion bayesiana de mapas de seguimiento de la mirada, de la region de la cabeza, sin embargo aun asi no aborda el problema de la identificacion del objeto
+- __Gaze:__ Aún es limitado ya que se este modelo estima la dirección de la mirada sin poder identificar el objeto o persona que interactúa con nuestra persona observada, además en algunos desarrollos de este modelo tienen una dependencia de un detector facial, dificultando estimar el punto de observación de personas que miran al lado opuesto de la cámara, un método usa un rastreador ocular basándose en la dirección de la mirada, aprendiendo mapas de probabilidad que predicen las zonas de fijación que salen de la región de la cabeza; que depende del tamaño de la cabeza y el ángulo de postura, luego aprendemos una combinación bayesiana de mapas de seguimiento de la mirada, de la región de la cabeza, sin embargo aún así no aborda el problema de la identificación del objeto.
 
-Nuestro método solo usa una vista en tercera persona de la escena para inferir la mirada.
+Este método solo usa una vista en tercera persona de la escena para inferir la mirada.
 
 ---------------------------------------------
 
@@ -125,7 +122,7 @@ EL diseño de la red esta basada principalmente en dos pathways, la primera para
 </center>
 
 
-Donde "⊗" representa el producto, *F()* corresponde a una capa totalmente conectada que utiliza el producto de las dos vías para predecir hacia donde está mirando una persona(ŷ).
+Donde "⊗" representa el producto, *F()* corresponde a una capa totalmente conectada que utiliza el producto de los dos pathways para predecir hacia donde está mirando una persona(ŷ).
 - __Saliency map:__
 Para formar el saliency pathway se usa una red convolucional en toda la imagen para producir una representación oculta de tamaño *D x D x K*.
 - __Gaze mask:__
@@ -169,7 +166,7 @@ Para la implementación del modelo se usó un framework de deep learning llamado
     </tr>
 </table>
 
-|     Modelo     | AUC   | Dist. | Dist. | Ángulo |
+|     Modelo     | AUC   | Dist. | Min. Dist. | Ángulo |
 |:--------------:|-------|-------|-------|-------:|
 | Nuestro        | 0.878 | 0.190 | 0.113 |  24°   |
 | SVM+shift grid | 0.788 | 0.268 | 0.186 |  40°   |
@@ -185,7 +182,7 @@ Para la implementación del modelo se usó un framework de deep learning llamado
 
 
 
-|    Modelo   | AUC   | Dist. | Dist. | Angulo |
+|    Modelo   | AUC   | Dist. | Min. Dist. | Angulo |
 |:-----------:|-------|-------|-------|:------:|
 | No image    | 0.821 | 0.221 | 0.142 |   27°  |
 | No position | 0.837 | 0.238 | 0.158 |   32°  |
