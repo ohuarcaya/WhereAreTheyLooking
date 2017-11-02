@@ -13,11 +13,8 @@ El enfoque consiste en tomar la posición de la cabeza en la imagen, para identi
 ---------------------------------------------
 
 ## Introducción ##
-La habilidad de seguir con la mirada lo que otras personas están observando es
-un punto clave para comprender lo que las personas están haciendo y cuales son
-sus intenciones. Por tal motivo es crucial que un sistema de visión por
-computadora tenga esta capacidad para comprender e interpretar mejor a las
-personas.
+La capacidad de poder hacer el seguimiento de la mirada de otra persona con un objeto o persona con el que esté interactuando con una gran precisión, es una capacidad del ser humano que ayuda a entender que es lo que hace una persona o las intenciones de la persona observada, esta tarea seria muy importante para un sistema de vision artificial, si embargo a pesar de la importancia de este tema, pocos han explorado la vision por ordenador que se propone este paper, viendo limitantes en los trabajos relacionados comparadas al paper que desarrollaremos, limitantes como solo ver la interaccion de personas que se miran unas a otras, seguimiento ocular de un conjunto de persona mediante multiples imagenes.
+
 
 <table>
   <tr>
@@ -44,10 +41,15 @@ __Funcionamiento:__ _Se trata de una arquitectura profunda que aprende a combina
 
 __Salida:__ _Distribución sobre posibles ubicaciones que la persona seleccionada podría estar mirando. (gráficamente como un mapa de prominencia desde el punto de vista de la persona)_
 
-### Trabajos Relacionados
-- __Saliency:__
 
-- __Gaze:__
+
+
+### Trabajos Relacionados
+- __Saliency:__ la mayoria de los modelos de **saliency** se centran en la predicción la prominencia social, la probabilidad de atención en la escena mientras un observador es una imagen en la escena, pruebas con este modelo mostraron que las personas tienden a observar la zona de fijacion ocular, tendiendo a ver objeos dentro esta zona, ya que esta zona atraera la zona del observador
+
+- __Gaze:__ aun es limitado ya que se este modelo estima la direccion de la mirada sin poder identificar el objeto o persona que interactua con nuestra persona observada, además en algunos desarrollos de este modelo tienen una dependencia de un detector facial, impidiendo estimar la mirada de personas que miran hacia otro lado de la cámara, un método usa un rastreador ocular basandose en la direccion de la mirada aprendiendo mapas de probabilidad que predicen las zonas de fijacion que salen de la region de la cabeza, asi como las fijaciones en la zona de la cabeza, ambas dependientes del tamaño de la cabeza y el angulo de postura, luego aprendemos una combinacion bayesiana de mapas de seguimiento de la mirada, de la region de la cabeza, sin embargo aun asi no aborda el problema de la identificacion del objeto
+
+Nuestro método solo usa una vista en tercera persona de la escena para inferir la mirada.
 
 ---------------------------------------------
 
