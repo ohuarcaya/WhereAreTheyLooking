@@ -116,7 +116,7 @@ Principalmente el modelo está inspirado en la tendencia de los humanos a seguir
 
 ### Gaze and Saliency Pathways
 Suponiendo que tenemos una imagen en particular x<sub>i</sub> y una persona para la cual deseamos predecir su mirada. Parametrizamos a esta persona con una ubicación espacial cuantificada de la cabeza de la persona x<sub>p</sub>, un recortado, una imagen de primer plano de su cabeza x<sub>h</sub>. Lo que se busca es predecir la ubicación espacial de la fijación de la persona representado por *y* utilizando redes profundas.
-EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial, G(x<sub>h</sub>, x<sub>p</sub>) de dimensiones _D x D_, la segunda vía(saliency) observa la imagen completa pero no la posición de la personay produce otro mapa espacial, S(x<sub>i</sub>), de las mismas dimensiones que el mapa anterior, luego se combinan las dos vías mediante un producto especial:
+EL diseño de la red esta basada principalmente en dos pathways, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera pathway solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial, G(x<sub>h</sub>, x<sub>p</sub>) de dimensiones _D x D_, la segunda pathway(saliency) observa la imagen completa pero no la posición de la personay produce otro mapa espacial, S(x<sub>i</sub>), de las mismas dimensiones que el mapa anterior, luego se combinan los dos pathways mediante un producto especial:
 
 <center>
   <b>ŷ</b> = <b>F</b>( <b>G</b>(x<sub>h</sub>, x<sub>p</sub>) ⊗ <b>S</b>(x<sub>i</sub> ) )
@@ -124,7 +124,7 @@ EL diseño de la red esta basada principalmente en dos vías, la primera para la
 
 
 - __Saliency map:__
-Para formar la vía saliency se usa una red convolucional en toda la imagen para producir una representación oculta de tamaño *D x D x K*
+Para formar el saliency pathway se usa una red convolucional en toda la imagen para producir una representación oculta de tamaño *D x D x K*.
 - __Gaze mask:__
 De forma similar, para el camino de la mirada usamos tambien una red convolucional pero en la imagen de la cabeza, luego se concatena su salida con la posición de la cabeza y se utiliza varias capas completamente conectadas y un sigmoide para predecir la mascara de mirada de dimensiones *D x D*.
 - __Pathway visualization:__
@@ -143,10 +143,10 @@ A pesar que los humanos casi siempre son capaces de seguir la mirada de una pers
 __Shifted grids:__
 Para la clasificación, en primer lugar se debe elegir el número de celdas, *N*. Pero la eleción de este parámetro es importante ya que si se eligiera un valor bajo de *N* tendríamos muy poca precisión en los resultados, en cambio si eligieramos una valor alto de *N* tendríamos más precisión pero el proceso de aprendizaje sería más difícil porque las perdidas de clasificación estandar no penalizarían adecuadamente las categorías espaciales.
 ### Training
-La red end-to-end que utilizamos es creada usando backpropagation además se usó un ***softmax loss***(se define como la combinación de un ***cross-entropy loss***, una ***softmax function*** y la última capa completamente conectada) para cada ***shifted grid*** y promediar sus pérdidas. Además debido a que el modelo solo es supervisado con fijaciones de la mirada, no se considera que las vías de la mirada y la saliencia resuelvan sus respectivos subproblemas, mas bién se espera que la propia estructura de nuestro modelo resuelva automaticamente estos conflictos.
+La red end-to-end que utilizamos es creada usando backpropagation además se usó un ***softmax loss***(se define como la combinación de un ***cross-entropy loss***, una ***softmax function*** y la última capa completamente conectada) para cada ***shifted grid*** y promediar sus pérdidas. Además debido a que el modelo solo es supervisado con fijaciones de la mirada, no se considera que las pathways de la mirada y la saliencia resuelvan sus respectivos subproblemas, mas bién se espera que la propia estructura de nuestro modelo resuelva automaticamente estos conflictos.
 
 __Implementation details:__
-Para la implementación del modelo se usó un framework de deep learning llamado ***Caffe***, las capas convolucionales en las dos vías, tanto de la de saliency como en la de gaze, están basadas en la arquitectura de las 5 primeras capas de la arquitectura de AlexNet.
+Para la implementación del modelo se usó un framework de deep learning llamado ***Caffe***, las capas convolucionales en las dos pathways, tanto de la de saliency como en la de gaze, están basadas en la arquitectura de las 5 primeras capas de la arquitectura de AlexNet.
 
 <table>
     <tr>
