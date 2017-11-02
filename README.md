@@ -119,7 +119,7 @@ Suponiendo que tenemos una imagen en particular x<sub>i</sub> y una persona para
 EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial, G(x<sub>h</sub>, x<sub>p</sub>) de dimensiones _D x D_, la segunda vía(saliency) observa la imagen completa pero no la posición de la personay produce otro mapa espacial, S(x<sub>i</sub>), de las mismas dimensiones que el mapa anterior, luego se combinan las dos vías mediante un producto especial:
 
 <center>
-  <b>ŷ</b> = <b>F</b>( <b>G</b>(x<sub>h</sub>, x<sub>p</sub>) ⊗ S(x<sub>i</sub> ) )
+  <b>ŷ</b> = <b>F</b>( <b>G</b>(x<sub>h</sub>, x<sub>p</sub>) ⊗ <b>S</b>(x<sub>i</sub> ) )
 </center>
 
 
