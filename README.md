@@ -116,9 +116,12 @@ Principalmente el modelo está inspirado en la tendencia de los humanos a seguir
 
 ### Gaze and Saliency Pathways
 Suponiendo que tenemos una imagen en particular x<sub>i</sub> y una persona para la cual deseamos predecir su mirada. Parametrizamos a esta persona con una ubicación espacial cuantificada de la cabeza de la persona x<sub>p</sub>, un recortado, una imagen de primer plano de su cabeza x<sub>h</sub>. Lo que se busca es predecir la ubicación espacial de la fijación de la persona representado por *y* utilizando redes profundas.
-EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial, $G({x}_{h}, {x}_{p})$ de dimensiones D x D, la segunda vía(saliency) observa la imagen completa pero no la posición de la personay produce otro mapa espacial, $S({ x }_{ i })$, de las mismas dimensiones que el mapa anterior, luego se combinan las dos vías mediante un producto especial:
+EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial, G(x<sub>h</sub>, x<sub>p</sub>) de dimensiones _D x D_, la segunda vía(saliency) observa la imagen completa pero no la posición de la personay produce otro mapa espacial, S(x<sub>i</sub>), de las mismas dimensiones que el mapa anterior, luego se combinan las dos vías mediante un producto especial:
 
-$$\hat{y} =F(G({ x }_{ h },{ x }_{ p })\mult S({ x }_{ i }))$$
+<center>
+  <b>ŷ</b> = <b>F</b>( <b>G</b>(x<sub>h</sub>, x<sub>p</sub>) ⊗ S(x<sub>i</sub> ) )
+</center>
+
 
 - __Saliency map:__
 Para formar la vía saliency se usa una red convolucional en toda la imagen para producir una representación oculta de tamaño *D x D x K*
