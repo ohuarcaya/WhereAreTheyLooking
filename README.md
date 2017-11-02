@@ -13,7 +13,36 @@ El enfoque consiste en tomar la posición de la cabeza en la imagen, para identi
 ---------------------------------------------
 
 ## Introducción ##
-texto seccion 1
+La habilidad de seguir con la mirada lo que otras personas están observando es
+un punto clave para comprender lo que las personas están haciendo y cuales son
+sus intenciones. Por tal motivo es crucial que un sistema de visión por
+computadora tenga esta capacidad para comprender e interpretar mejor a las
+personas.
+
+<table>
+  <tr>
+    <td height="150"><img src="imagenes/fig1.1.png"></td>
+    <td height="150"><img src="imagenes/fig1.2.png"></td>
+    <td height="150"><img src="imagenes/fig1.3.png"></td>
+    <td height="150"><img src="imagenes/fig1.4.png"></td>
+  </tr>
+  <tr>
+    <td colspan="4"><b>Gaze-following:</b> Se presenta un modelo que predice el punto de observación y además un nuevo conjunto de datos a gran escala por gaze-following.</td>
+  </tr>
+</table>
+Gaze-following tiene aplicaciones en robótica e interfaces de interacción humana, donde es importante comprender el objeto de interés de una persona.
+
+Mediante el seguimiento de las miradas se puede predecir los objetos con los que planean interactuar incluso antes de comenzar una acción.
+
+__Formulación:__ _Dada una imagen única que contiene una o más personas, la tarea es predecir la ubicación que está mirando cada persona en un escenario._
+
+__Data:__ _Para entrenar y evaluar nuestro modelo, se presentamos GazeFollow, un conjunto de datos de referencia a gran escala para el seguimiento de la mirada._
+
+__Entrada:__ _El escenario o imagen; la ubicación de la persona para la que queremos seguir la mirada._
+
+__Funcionamiento:__ _Se trata de una arquitectura profunda que aprende a combinar la orientación de la cabeza y la ubicación de la cabeza en el escenario para  seguir la mirada de una persona dentro de la imagen._
+
+__Salida:__ _Distribución sobre posibles ubicaciones que la persona seleccionada podría estar mirando. (gráficamente como un mapa de prominencia desde el punto de vista de la persona)_
 
 ### Trabajos Relacionados
 - __Saliency:__
@@ -87,7 +116,7 @@ Principalmente el modelo está inspirado en la tendencia de los humanos a seguir
 
 ### Gaze and Saliency Pathways
 Suponiendo que tenemos una imagen en particular x<sub>i</sub> y una persona para la cual deseamos predecir su mirada. Parametrizamos a esta persona con una ubicación espacial cuantificada de la cabeza de la persona x<sub>p</sub>, un recortado, una imagen de primer plano de su cabeza x<sub>h</sub>. Lo que se busca es predecir la ubicación espacial de la fijación de la persona representado por ***y*** utilizando redes profundas.
-EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial.  
+EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial.
 - __Saliency map:__
 Para formar la vía saliency se usa una red convolucional en toda la imagen para producir una representación oculta de tamaño ***D x D x K***
 - __Gaze mask:__
@@ -131,8 +160,7 @@ Para la implementación del modelo se usó un framework de deep learning llamado
     </tr>
 </table>
 
-
-|     Modelo     | AUC   | Dist. | Dist. | Ángulo |                                                                      
+|     Modelo     | AUC   | Dist. | Dist. | Ángulo |
 |:--------------:|-------|-------|-------|-------:|
 | Nuestro        | 0.878 | 0.190 | 0.113 |  24°   |
 | SVM+shift grid | 0.788 | 0.268 | 0.186 |  40°   |
