@@ -123,6 +123,7 @@ EL diseño de la red esta basada principalmente en dos vías, la primera para la
 </center>
 
 
+Donde "⊗" representa el producto, *F()* corresponde a una capa totalmente conectada que utiliza el producto de las dos vías para predecir hacia donde está mirando una persona(ŷ).
 - __Saliency map:__
 Para formar la vía saliency se usa una red convolucional en toda la imagen para producir una representación oculta de tamaño *D x D x K*
 - __Gaze mask:__
