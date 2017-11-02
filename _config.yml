@@ -1,2 +1,4 @@
 theme: jekyll-theme-architect
 title: Parcial Machine Learning: Where are they looking?
+use_math: true
+markdown: maruku
