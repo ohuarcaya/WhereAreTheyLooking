@@ -115,12 +115,15 @@ Principalmente el modelo está inspirado en la tendencia de los humanos a seguir
 ![seccion3](imagenes/fig3.png "Arquitectura de Red")
 
 ### Gaze and Saliency Pathways
-Suponiendo que tenemos una imagen en particular x<sub>i</sub> y una persona para la cual deseamos predecir su mirada. Parametrizamos a esta persona con una ubicación espacial cuantificada de la cabeza de la persona x<sub>p</sub>, un recortado, una imagen de primer plano de su cabeza x<sub>h</sub>. Lo que se busca es predecir la ubicación espacial de la fijación de la persona representado por ***y*** utilizando redes profundas.
-EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial.
+Suponiendo que tenemos una imagen en particular x<sub>i</sub> y una persona para la cual deseamos predecir su mirada. Parametrizamos a esta persona con una ubicación espacial cuantificada de la cabeza de la persona x<sub>p</sub>, un recortado, una imagen de primer plano de su cabeza x<sub>h</sub>. Lo que se busca es predecir la ubicación espacial de la fijación de la persona representado por *y* utilizando redes profundas.
+EL diseño de la red esta basada principalmente en dos vías, la primera para la mirada(gaze) y la segunda para los rasgos sobresalientes(saliency). Para la primera vía solo se tiene acceso a la imagen de primer plano de la cabeza de la persona y su ubicación, y se produce un mapa espacial, $G({x}_{h}, {x}_{p})$ de dimensiones D x D, la segunda vía(saliency) observa la imagen completa pero no la posición de la personay produce otro mapa espacial, $S({ x }_{ i })$, de las mismas dimensiones que el mapa anterior, luego se combinan las dos vías mediante un producto especial:
+
+$$\hat{y} =F(G({ x }_{ h },{ x }_{ p })\mult S({ x }_{ i }))$$
+
 - __Saliency map:__
-Para formar la vía saliency se usa una red convolucional en toda la imagen para producir una representación oculta de tamaño ***D x D x K***
+Para formar la vía saliency se usa una red convolucional en toda la imagen para producir una representación oculta de tamaño *D x D x K*
 - __Gaze mask:__
-De forma similar, para el camino de la mirada usamos tambien una red convolucional pero en la imagen de la cabeza, luego se concatena su salida con la posición de la cabeza y se utiliza varias capas completamente conectadas y un sigmoide para predecir la mascara de mirada de dimensiones ***D x D***.
+De forma similar, para el camino de la mirada usamos tambien una red convolucional pero en la imagen de la cabeza, luego se concatena su salida con la posición de la cabeza y se utiliza varias capas completamente conectadas y un sigmoide para predecir la mascara de mirada de dimensiones *D x D*.
 - __Pathway visualization:__
 A continuación se mostrará imagenes que representan el mapa de saliency y la máscara de gaze aprendida por nuestra red la cual aprende una noción de saliencia que es relevante para la tarea de seguimiento de mirada. La primera imagen muestra la salida de la máscara de mirada para distintas posiciones de cabeza. En la segunda se muestra tres partes en una solo imagen, la primera parte es la imagen de entrada, la segunda parte es la saliencia de visualización libre estimada y la saliencia que sigue la mirada estimada usando nuestro modelo.
 
@@ -135,7 +138,7 @@ A continuación se mostrará imagenes que representan el mapa de saliency y la m
 A pesar que los humanos casi siempre son capaces de seguir la mirada de una persona de manera confiable en algunas oportunidades esta puede ser ambigua, por ejemplo si hay muchos objetos salientes en la imagen o la dirección de la vista de la persona no es muy bien percibida entonces habrá este tipo de incertidumbre.
 
 __Shifted grids:__
-Para la clasificación, en primer lugar se debe elegir el número de celdas, ***N***. Pero la eleción de este parámetro es importante ya que si se eligiera un valor bajo de ***N*** tendríamos muy poca precisión en los resultados, en cambio si eligieramos una valor alto de ***N*** tendríamos más precisión pero el proceso de aprendizaje sería más difícil porque las perdidas de clasificación estandar no penalizarían adecuadamente las categorías espaciales.
+Para la clasificación, en primer lugar se debe elegir el número de celdas, *N*. Pero la eleción de este parámetro es importante ya que si se eligiera un valor bajo de *N* tendríamos muy poca precisión en los resultados, en cambio si eligieramos una valor alto de *N* tendríamos más precisión pero el proceso de aprendizaje sería más difícil porque las perdidas de clasificación estandar no penalizarían adecuadamente las categorías espaciales.
 ### Training
 La red end-to-end que utilizamos es creada usando backpropagation además se usó un ***softmax loss***(se define como la combinación de un ***cross-entropy loss***, una ***softmax function*** y la última capa completamente conectada) para cada ***shifted grid*** y promediar sus pérdidas. Además debido a que el modelo solo es supervisado con fijaciones de la mirada, no se considera que las vías de la mirada y la saliencia resuelvan sus respectivos subproblemas, mas bién se espera que la propia estructura de nuestro modelo resuelva automaticamente estos conflictos.
 
@@ -172,33 +175,19 @@ Para la implementación del modelo se usó un framework de deep learning llamado
 | One human      | 0.924 | 0.096 | 0.040 |  11°   |
 
 
----------------------------------------------
-
-
-|    Modelo   | AUC   | Dist. | Dist. | Ángulo |
-|:-----------:|-------|-------|-------|-------:|
-| No image    | 0.821 | 0.221 | 0.142 |  27°   |
-| No position | 0.837 | 0.238 | 0.158 |  32°   |
-| No head     | 0.822 | 0.264 | 0.179 |  41°   |
-| No eltwise  | 0.876 | 0.193 | 0.117 |  25°   |
-| 5x5 grid    | 0.839 | 0.245 | 0.164 |  36°   |
-| 10x10 grid  | 0.873 | 0.218 | 0.138 |  30°   |
-| L2 loss     | 0.768 | 0.245 | 0.169 |  34°   |
-| Our full    | 0.878 | 0.190 | 0.113 |  24°   |
+***Evaluación del modelo en la forma base***
 
 
 
-## Experiments
-### Setup
-### Resultados
-### Análisis
-__Ablation study:__
-__Internal representation:__
-__Automatic head detection:__
+|    Modelo   | AUC   | Dist. | Dist. | Angulo |
+|:-----------:|-------|-------|-------|:------:|
+| No image    | 0.821 | 0.221 | 0.142 |   27°  |
+| No position | 0.837 | 0.238 | 0.158 |   32°  |
+| No head     | 0.822 | 0.264 | 0.179 |   41°  |
+| No eltwise  | 0.876 | 0.193 | 0.117 |   25°  |
+| 5x5 grid    | 0.839 | 0.245 | 0.164 |   36°  |
+| 10x10 grid  | 0.873 | 0.218 | 0.138 |   30°  |
+| L2 loss     | 0.768 | 0.245 | 0.169 |   34°  |
+| Our full    | 0.878 | 0.190 | 0.113 |   24°  |
 
----------------------------------------------
-
-## Conclusión
-
-
-## Referencias
+***Evaluación del modelo con algunos componentes bloqueados***
