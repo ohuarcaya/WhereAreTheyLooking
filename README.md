@@ -172,10 +172,61 @@ Para la implementación del modelo se usó un framework de deep learning llamado
 | Random         | 0.504 | 0.484 | 0.391 |  69°   |
 | One human      | 0.924 | 0.096 | 0.040 |  11°   |
 
-***Evaluación del modelo en la forma base***
+
+<table>
+    <tr>
+      <td width="300"><img src="imagenes/fig5.1.png"></td>
+      <td width="100"><img src="imagenes/fig5.4.png"/></td>
+    </tr>
+    <tr>
+      <td><img src="imagenes/fig5.2.png"></td>
+      <td><img src="imagenes/fig5.5.png"/></td>
+    </tr>
+    <tr>
+      <td><img src="imagenes/fig5.3.png"></td>
+      <td><img src="imagenes/fig5.6.png"/></td>
+    </tr>
+    <tr>
+      <td colspan="2"><p style="text-align:center"><b>Resultados Cualitativos:</b> <i> Se pueden observar varias imágenes que son ejemplos de éxitos y errores del modelo, donde las lineas rojas corresponden a las miradas verdaderas y las lineas amarillas a las miradas pronosticadas.</i></p></td>
+    </tr>
+</table>
+
+|     Modelo     | AUC   | Dist. | Dist. | Ángulo |
+|:--------------:|-------|-------|-------|-------:|
+| Nuestro        | 0.878 | 0.190 | 0.113 |  24°   |
+| SVM+shift grid | 0.788 | 0.268 | 0.186 |  40°   |
+| SVM+one grid   | 0.758 | 0.276 | 0.193 |  43°   |
+| Judd           | 0.711 | 0.337 | 0.250 |  54°   |
+| Fixed bias     | 0.674 | 0.306 | 0.219 |  48°   |
+| Center         | 0.633 | 0.313 | 0.230 |  49°   |
+| Random         | 0.504 | 0.484 | 0.391 |  69°   |
+| One human      | 0.924 | 0.096 | 0.040 |  11°   |
+
+
+|    Modelo   | AUC   | Dist. | Dist. | Ángulo |
+|:-----------:|-------|-------|-------|-------:|
+| No image    | 0.821 | 0.221 | 0.142 |  27°   |
+| No position | 0.837 | 0.238 | 0.158 |  32°   |
+| No head     | 0.822 | 0.264 | 0.179 |  41°   |
+| No eltwise  | 0.876 | 0.193 | 0.117 |  25°   |
+| 5x5 grid    | 0.839 | 0.245 | 0.164 |  36°   |
+| 10x10 grid  | 0.873 | 0.218 | 0.138 |  30°   |
+| L2 loss     | 0.768 | 0.245 | 0.169 |  34°   |
+| Our full    | 0.878 | 0.190 | 0.113 |  24°   |
+
+
+
+## Experiments
+### Setup
+### Resultados
+### Análisis
+__Ablation study:__
+__Internal representation:__
+__Automatic head detection:__
 
 ---------------------------------------------
 
+## Conclusión
 
 |    Modelo   | AUC   | Dist. | Dist. | Angulo |
 |:-----------:|-------|-------|-------|:------:|
