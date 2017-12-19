@@ -1,34 +1,37 @@
 # Where are They looking?
 
 ## Resumen
-Los humanos tienen la notable capacidad de seguir la mirada de otras personas, cuando conversas con alguien y observas algo destrás de él (ella) volteará por instinto.
-Esta habilidad va de mano con la empatía, que nos permite asumir lo que otra persona esta pensando, como se siente o si va a realizar a alguna acción.
 
 En el presente se expone la propuesta del paper
-_[Where are they looking?](http://gazefollow.csail.mit.edu/)_ cuyo enfoque comprende el uso de redes neuronales profundas para el seguimiento de miradas con un nuevo conjunto de datos de referencia 'GazeFollow'
+_[Where are they looking?](http://gazefollow.csail.mit.edu/)_ cuyo enfoque comprende el uso de redes neuronales profundas para el seguimiento de miradas con un nuevo conjunto de datos de referencia 'GazeFollow'.
 
 
-El enfoque consiste en tomar la posición de la cabeza en la imagen, para identifica el rango de visión y los objetos contenidos en dicho rango; y por medio de la red profunda concluir que se está observando. Este enfoque produce resultados confiables, incluso cuando solo se ve la parte posterior de la cabeza. Pero aún no se tiene el rendimiento humano en esta tarea.
+### Proceso:
+* Tomar la posición de la cabeza en la imagen.
+* Identificar el rango de visión y los objetos contenidos en dicho rango.
+* Concluir que se está observando.
 
 ---------------------------------------------
 
 ## Introducción ##
-La capacidad de poder hacer el seguimiento de la mirada de otra persona con gran precisión, hacia un objeto o persona con el que esté interactuando. Es una capacidad del ser humano que ayuda a entender que es lo que hace, o que intenciones tiene la persona observada; esta tarea sería muy importante para un sistema de visión artificial.
-
 <table>
   <tr>
-    <td height="150"><img src="imagenes/fig1.1.png"></td>
-    <td height="150"><img src="imagenes/fig1.2.png"></td>
-    <td height="150"><img src="imagenes/fig1.3.png"></td>
     <td height="150"><img src="imagenes/fig1.4.png"></td>
+    <td height="150"><img src="imagenes/fig1.3.png"></td>
+    <td height="150"><img src="imagenes/fig1.2.png"></td>
+    <td height="150"><img src="imagenes/fig1.1.png"></td>
   </tr>
   <tr>
-    <td colspan="4"><b>Gaze-following:</b> Se presenta un modelo que predice el punto de observación y además un nuevo conjunto de datos a gran escala por gaze-following.</td>
+    <td colspan="2"></td>
+    <td colspan="2"><b>Gaze-following</b></td>
   </tr>
 </table>
-Gaze-following tiene aplicaciones en robótica e interfaces de interacción humana, donde es importante comprender el objeto de interés de una persona.
 
-Mediante el seguimiento de las miradas se puede predecir los objetos con los que planean interactuar incluso antes de comenzar una acción.
+### Aplicaciones Gaze following
+* Robótica.
+* Interfaces de interacción humana.
+* Marqueting on retail.
+
 
 __Formulación:__ _Dada una imagen única que contiene una o más personas, la tarea es predecir la ubicación que está mirando cada persona en un escenario._
 
