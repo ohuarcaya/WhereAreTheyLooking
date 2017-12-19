@@ -22,8 +22,7 @@ _[Where are they looking?](http://gazefollow.csail.mit.edu/)_ cuyo enfoque compr
     <td height="150"><img src="imagenes/fig1.1.png"></td>
   </tr>
   <tr>
-    <td colspan="2"></td>
-    <td colspan="2"><b>Gaze-following</b></td>
+    <td colspan="4"><b>Gaze-following</b></td>
   </tr>
 </table>
 
@@ -31,7 +30,6 @@ _[Where are they looking?](http://gazefollow.csail.mit.edu/)_ cuyo enfoque compr
 * Robótica.
 * Interfaces de interacción humana.
 * Marqueting on retail.
-
 
 __Formulación:__ _Dada una imagen única que contiene una o más personas, la tarea es predecir la ubicación que está mirando cada persona en un escenario._
 
@@ -45,16 +43,13 @@ __Salida:__ _Distribución sobre posibles ubicaciones que la persona seleccionad
 
 
 ### Trabajos Relacionados
-- __Saliency:__ la mayoria de los modelos de **saliency** se centran en la predicción de la prominencia social, la probabilidad de atención en la escena mientras un observador es una imagen en la escena, pruebas con este modelo mostraron que las personas tienden a observar la zona de fijación ocular, tendiendo a ver objetos dentro esta zona, ya que esta zona atraera la atención del observador.
+- __Saliency (Prominencia):__ Se tiende a observar la zona de fijación ocular, tendiendo a ver objetos dentro esta zona, ya que esta zona atraera la atención del observador.
 
-- __Gaze:__ Aún es limitado ya que se este modelo estima la dirección de la mirada sin poder identificar el objeto o persona que interactúa con nuestra persona observada, además en algunos desarrollos de este modelo tienen una dependencia de un detector facial, dificultando estimar el punto de observación de personas que miran al lado opuesto de la cámara, un método usa un rastreador ocular basándose en la dirección de la mirada, aprendiendo mapas de probabilidad que predicen las zonas de fijación que salen de la región de la cabeza; que depende del tamaño de la cabeza y el ángulo de postura, luego aprendemos una combinación bayesiana de mapas de seguimiento de la mirada, de la región de la cabeza, sin embargo aún así no aborda el problema de la identificación del objeto.
-
-Este método solo usa una vista en tercera persona de la escena para inferir la mirada.
+- __Gaze (Mirada):__ Este modelo estima la dirección de la mirada sin poder identificar el objeto o persona que interactúa con nuestra persona observada. Usa un rastreador ocular basándose en las zonas de fijación que salen de la cabeza, sin embargo aún así no aborda el problema de la identificación del objeto.
 
 ---------------------------------------------
 
 ## Gaze Follow: Un Conjunto de Datos a Gran Escala
-Con el objetivo de realizar este trabajo, se construyó GazeFollow, que es un basto conjunto de datos que incluye imágenes y objetivos visuales que contempla:
 
 <table>
   <tr>
@@ -72,19 +67,17 @@ Con el objetivo de realizar este trabajo, se construyó GazeFollow, que es un ba
 Cuya concatenación resultó en un desafiante conjunto de datos que incluye una inmensa colección de personas en diferentes tipos de escenarios.
 
 __Un poco sobre los Datos__
-> Este conjunto de datos no incluye la verdad sobre la tierra de la mirada de cada persona, así que fue añadido usando Mechanical Turk de Amazon ([AMT](https://www.mturk.com/mturk/welcome)); con el cual se marcaron manualmente los centros focales y el punto donde de observación. Lo que incluye detalles como si el punto de observación está fuera de la imagen o si la cabeza no era visible
+> Se trabajo con Mechanical Turk de Amazon ([AMT](https://www.mturk.com/mturk/welcome))
 
 > Para mejorar la data se incluye imágenes con el valor certero de visión con objetivo y se descarta casos deficientes obteniendo: _130339_ personas en _122143_ imágenes con punto focal incluido en la imagen.
 
 __Preparación__
 
 Se separó la data en train (117361) y test (4782); con la condición que cada persona en una imagen forme parte de la misma división.
-Para evitar bias, las imágenes de prueba se distribuyeran uniformemente en toda la imagen.
-Además, para evaluar la consistencia humana en el seguimiento de la mirada, recogimos 10 anotaciones de la mirada por persona para el conjunto de test.
 
 <table>
   <tr><img src="imagenes/fig2.1.png"></tr>
-  <tr><p style="text-align:center"><b>GazeFollow Dataset:</b><i>Se contemplan las anotaciones del objetivo de la mirada para cierto grupo de imágenes</i></p>
+  <tr><p style="text-align:center"><b>GazeFollow Dataset</b></p>
   </tr>
 </table>
 
