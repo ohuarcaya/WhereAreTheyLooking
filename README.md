@@ -43,11 +43,73 @@ __Salida:__ _Distribución sobre posibles ubicaciones que la persona seleccionad
 
 
 ### Trabajos Relacionados
+
 - __Saliency (Prominencia):__ Se tiende a observar la zona de fijación ocular, tendiendo a ver objetos dentro esta zona, ya que esta zona atraera la atención del observador.
 
 - __Gaze (Mirada):__ Este modelo estima la dirección de la mirada sin poder identificar el objeto o persona que interactúa con nuestra persona observada. Usa un rastreador ocular basándose en las zonas de fijación que salen de la cabeza, sin embargo aún así no aborda el problema de la identificación del objeto.
 
----------------------------------------------
+<table>
+  <tr>
+    <th colspan="3"><p style="text-align:center">Densidad de Probabilidad</p></th>
+    <th colspan="2"><p style="text-align:center">Dirección Objetivo Promedio</p></th>
+  </tr>
+  <tr>
+    <td width="150"><img src="imagenes/fig2.b1.png"></td>
+    <td width="150"><img src="imagenes/fig2.b2.png"></td>
+    <td width="150"><img src="imagenes/fig2.b3.png"></td>
+    <td width="150"><img src="imagenes/fig2.b4.png"></td>
+    <td width="150"><img src="imagenes/fig2.b5.png"></td>
+  </tr>
+</table>
+
+### Trabajos Previos
+#### Social Interactions: A First-Person Perspective
+<table>
+  <tr>
+    <th colspan="1"><p style="text-align:center">Densidad de Probabilidad</p></th>
+    <th colspan="2"><p style="text-align:center">Dirección Objetivo Promedio</p></th>
+  </tr>
+  <tr>
+    <td width="450" rowspan="3"><img src="imagenes/social1.png"></td>
+    <td width="150" colspan="2"><img src="imagenes/social2.png"></td>
+  </tr>
+  <tr>
+    <td width="150"><img src="imagenes/social3.png"></td>
+    <td width="150"><img src="imagenes/social4.png"></td>
+  </tr>
+</table>
+
+#### Learning Deep Features for Scene Recognition using Places Database
+
+<table>
+  <tr>
+    <img src="imagenes/features0.png">
+  </tr>
+  <tr>
+    <th><img src="imagenes/features1.png"></th>
+    <th><img src="imagenes/features2.png"></th>
+    <th><img src="imagenes/features3.png"></th>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Places 205</th>
+    <th>SUN 205</th>
+  </tr>
+  <tr>
+    <td><b>Places-CNN</b></td>
+    <td>50.0%</td>
+    <td>66.2%</td>
+  </tr>
+  <tr>
+  <td><b>ImageNet CNN feature+SVM</b></td>
+  <td>40.8%</td>
+  <td>49.6%</td>
+  </tr>
+</table>
+
 
 ## Gaze Follow: Un Conjunto de Datos a Gran Escala
 
@@ -81,27 +143,6 @@ Se separó la data en train (117361) y test (4782); con la condición que cada p
   </tr>
 </table>
 
-
-<table>
-  <tr>
-    <th colspan="3"><p style="text-align:center">Densidad de Probabilidad</p></th>
-    <th colspan="2"><p style="text-align:center">Dirección Objetivo Promedio</p></th>
-  </tr>
-  <tr>
-    <td width="150"><img src="imagenes/fig2.b1.png"></td>
-    <td width="150"><img src="imagenes/fig2.b2.png"></td>
-    <td width="150"><img src="imagenes/fig2.b3.png"></td>
-    <td width="150"><img src="imagenes/fig2.b4.png"></td>
-    <td width="150"><img src="imagenes/fig2.b5.png"></td>
-  </tr>
-  <tr>
-    <td>Densidad de probabilidad para la ubicación de la cabeza.</td>
-    <td>Densidad de probabilidad para la ubicación de la fijación objetivo.</td>
-    <td>Densidad de probabilidad para la fijación normalizada respecto a la posición de la cabeza.</td>
-    <td>Densidad de dirección promedio de fijación objetivo según posición de la cabeza.</td>
-    <td>Color de código de intensidad de fijación objetivo (centro punto más probable).</td>
-  </tr>
-</table>
 
 ---------------------------------------------
 
